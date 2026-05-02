@@ -6,6 +6,10 @@ Generated over $300,000 in revenue, 80,000+ customers.
 
 Never wanted to release this, but sadly time has come, I havent used my computer in 12 months, If you're still playing TF2,CSGO, go outside
 
+Stop sitting inside rotting like a loser when theres so much to experience outside, build friends, relationships, and get your family going
+
+# and thats all she wrote
+
 # Credits
 1. Senator - Loader, codebase, framework, cheats, reverse engineering, DRM Designs, UI, security design, project design, fixes, the lsit goes on (easily 90% of the work)
 2. Styles - Convincing me to level up and work harder, changed me as a person, big respect bro
