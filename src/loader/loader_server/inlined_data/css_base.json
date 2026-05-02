@@ -1,0 +1,100 @@
+[
+  {
+    "name": "client_state_server_tick",
+    "value": 432,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 449867442,
+    "padding": []
+  },
+  {
+    "name": "client_state_client_tick",
+    "value": 436,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 1368966526,
+    "padding": []
+  },
+  {
+    "name": "client_state_signon_state",
+    "value": 332,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 2391781175,
+    "padding": []
+  },
+  {
+    "name": "client_state_last_command_ack",
+    "value": 35964,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 1648077713,
+    "padding": []
+  },
+  {
+    "name": "client_state_last_outgoing_command",
+    "value": 35956,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 3608816306,
+    "padding": []
+  },
+  {
+    "name": "client_state_choked_commands",
+    "value": 35960,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 2661663916,
+    "padding": []
+  },
+  {
+    "name": "rgfl_coordinate_frame",
+    "value": 1016,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 2745465717,
+    "padding": []
+  },
+  {
+    "name": "move_type",
+    "value": 500,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 277321977,
+    "padding": []
+  },
+  {
+    "name": "surface_friction",
+    "value": 4728,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 823647999,
+    "padding": []
+  },
+  {
+    "name": "flash_bang_time",
+    "value": 6736,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 1116066156,
+    "padding": []
+  },
+  {
+    "name": "last_bone_setup_time",
+    "value": 2928,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 1302664470,
+    "padding": []
+  },
+  {
+    "name": "model_bone_counter",
+    "value": 2040,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 520624094,
+    "padding": []
+  },
+  {
+    "name": "shoot_pos",
+    "value": 235,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 413046753,
+    "padding": []
+  },
+  {
+    "name": "smack_time",
+    "value": 2496,
+    "file_path": "./inlined_data/css_base.json",
+    "hash": 1563875822,
+    "padding": []
+  }
+]

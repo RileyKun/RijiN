@@ -1,0 +1,862 @@
+[Msg]Unhandled Lua Refresh: [NAME:%s] [TYPE:%s]\n->34bfae585693cd4b2af19e48ecc235d7
+[Msg]HTML: Error creating global [%s] _wasnt an object_\n->c9f4fa45df58d9423d4e3b179d028b8f
+[Msg]HTML: Error creating global function [%s.%s] _wasnt an object_\n->682758f051be031045a1c006ec2405e8
+[Msg]Tagging user #%i\n->9c59e48ca3d95572554d3d9e0a417882
+[Msg]Tagging location %s\n->7db985aa8bbf1610b5b15f1a372660f3
+[Msg]Screenshot Requested\n->faf026a30165f2c09328df892fea8842
+[Msg]WorkshopDL: Querying %i addons for info..\n->9cdf0ca9cc74210293cac7fbd625dc31
+[Msg]WorkshopDL: Skipped %i workshop addons that do not match cl_downloadfilter!\n->ad674e7b1c0c8b7c19c75b8bd197f1e2
+[Msg]WorkshopDL: Transferred %s _%llu_ in 10 seconds!\n->9fd85771f8b32106ff5bb116d76f179d
+[Msg]WARNING: Broke possible Lua Effect infinite loop! Check your code!\n->e575ad8604a00b846aa555edfac9da0e
+[Msg]Error: Couldnt initialize effect!\n->800270754cf41bfd906c961a1f6b4986
+[Msg]%s\n->16cfd108712175f57223c36d8e15e404
+[Msg]Saving poster to %s\n->edf7f3176f1c70596084b59262388d82
+[Msg]Saved poster part to %s\n->517a5a1a9761154314e7c5c2c0068859
+[Msg]Allocating %s for poster\n->dbb657b762988d1fc496a264d0ddcacd
+[Msg]Couldnt allocate memory for poster.\n->0c1f05b2db211a7a471753af117def98
+[Msg]Usage: poster [multiplier] [bSaveEach], For example  poster 2->28a6e3652217bff65ae9614f91cd5a60
+[Msg]Turning off prediction for old entity..\n->e7dd93407663c0c5b7b377b710a441cb
+[Msg]Turning on prediction for new entity..\n->d5352c0b1114a6720e1bf506531d8f9a
+[Msg]Couldnt allocate memory to load file %s!\n->0a6b04d30425bae6db484b9dd6387bd4
+[Msg]Removed possible exploit _%s_\n->ccbc4073a6b63f46f25468f2fae7337e
+[Msg]Removed possible exploit _%s_\n->ccbc4073a6b63f46f25468f2fae7337e
+[Msg]Removed possible exploit _%s_\n->ccbc4073a6b63f46f25468f2fae7337e
+[Msg]Removed possible exploit _%s_\n->ccbc4073a6b63f46f25468f2fae7337e
+[Msg]Removed possible exploit _%s_\n->ccbc4073a6b63f46f25468f2fae7337e
+[Msg]Removed possible exploit _%s_\n->ccbc4073a6b63f46f25468f2fae7337e
+[Msg]Removed possible exploit _%s_\n->ccbc4073a6b63f46f25468f2fae7337e
+[Msg]Removed possible exploit _%s_\n->ccbc4073a6b63f46f25468f2fae7337e
+[Msg]Cleaning up temp file %s\n->fc402985870875e2a7ab95bfa055b4db
+[Msg]Dev Branch: gmod_mcore_test=1\n->f52f307b12cfd54f26f3d8b9aa542ddc
+[Msg]P2P connection with p2p:%llu failed: %s.\n->5e95fd2345af3abfcda6fa93ce5ce167
+[Msg]Accepting P2P request from p2p:%llu.\n->e3177d8ec5318062f14df0c2256ac887
+[Msg]Ignoring P2P request from p2p:%llu.\n->2a594a7c6c5cf1881c5096b3b4e674f4
+[Msg]Clearning temporary files...\n->31e3685d906cdf1fdfc4a87452a828ef
+[Msg]Running script %s...\n->872ac3ab2f4b82eb0700a01b6edf450a
+[Msg]Clientside Lua startup!\n->9b49de0ddbff0efe5f35e4d7332183ec
+[Msg]Timer: %s took %f seconds\n->6c334e9e3b5ac8bb2d885e26d549af52
+[Msg]%s _%s_\n->b6944f8872165cd244b3d6d85399e806
+[Msg]%i. %s\n->dc46fc9d060fd1ef1455bb269474f122
+[Msg]Datapack Stats\n->2e500120a5f28b7dfd6037483ec0468e
+[Msg]Total Files:\t\t\t%s\n->9846f0114158f97386cd800dc2f4828c
+[Msg]Total NoSend:\t\t\t%s\n->a0a2ed31ac84493aaf19fb9f9a22db72
+[Msg]Total Full:\t\t\t%s\n->60688ee04e11e4374288aa5af90d6ba6
+[Msg]Compressed Size:\t\t%s\n->6656d7d909253efddff21f6c5f8a8d46
+[Msg]Uncompressed Size:\t%s\n->cd2d68cfa4ce6c6115c6a32cc3bea4e4
+[Msg]Filenames:\t\t\t%s\n->b00921b5272dc1728c2a7a04289ac4dd
+[Msg]Hash Size:\t\t\t%s\n->badaf651f77ab556d640e987d19b3b72
+[Msg]Overall Size:\t\t\t%s\n->080ddb973b2c0b032d0cf0c3af19a658
+[Msg]SHA256 in cache file doesnt match!!\n->395bc1093452b485c48f48db314766e1
+[Msg]Requesting %i Lua files from the server...\n->35595c0b811b88f59adcd5f341bf347b
+[Msg]Lua cache is up to date\n->3c48700208a439c750180f571e986489
+[Msg]Loading Effects..\n->e4a1bb4136202e3e1c50c46ed6c747f5
+[Msg]Done!\n->662502daa2d59bb4ef27167ce2a21787
+[Msg]Setting Networked Var Failed!!\n->aa30c4a75891485fe9ea5eb1043be901
+[Msg]Error: Trying to network _receive_ unacceptable type _%s_\n->5540c1e488af913b49edd8d3012ec714
+[Msg]Setting Networked Var Failed!!\n->aa30c4a75891485fe9ea5eb1043be901
+[Msg]Setting Networked Var Proxy Failed!!\n->cbcfe470ac83dc44a2192f54d9571c77
+[Msg]No Kinect SDK\n->61dc390cc3d94b397ff19a1642a69b03
+[Msg]Kinect SDK found!\n->dcaadef7d733577e61f1f8a3f2eddc40
+[Msg]Failed to create kinect sensor _%i_\n->83dfa163aa8f9f5b73e64d9abbc7eb32
+[Msg]Kinect sensor reported not genuine _The xbox kinect needs to have the SDK installed  if you install it, it should work_\n->75b5367d72378c7167bc6b9f851c0853
+[Msg]Kinect sensor status reported _%i_\n->e99ffd584cbc0c81612f40d9926f6374
+[Msg]SaveSpawnmenuCategory: Category %s isnt string!!!\n->c04838732c6f65805b2dc97b231ffcc6
+[Msg]%s:\t\t%s %g %g\t\t_Blur: %i, Scanlines: %i, Extended: %i, Flags: %i_\n->f845af21892fb276293d0ed6a005da20
+[Msg]\tTotal Lua fonts: %i _Use vgui_spew_fonts for engine fonts_\n->49e167b223118100d40040b363d45542
+[Msg]%s->1c481aa99d081c32182011a758f73d33
+[Msg]Simple Timers:\n->953de6eabf80e513397c60235fafd245
+[Msg]\tSimple Timer\tTime Left: %f, %s\n->e80819f377f713427d291a70b4176a63
+[Msg]\tNo simple timers!\n->2e1bdfe897818efca26688fa353c9a65
+[Msg]Timers:\n->6704f50e0142649634934c37fe75b122
+[Msg]\tTimer %s\tTime Left: %f, Reps Left: %i, Paused: %i, %s\n->2ca2cff095a5aea808419ce4ba26c138
+[Msg]\tNo timers!\n->328b86618642a587e47d8220f44b77df
+[Msg]ERROR: Mesh::BuildTriangles  first argument should be a table of vertices!\n->f02002cfc8216a37897f8a759719a6c2
+[Msg]WARNING: STARTUP DELTA IS TOO LOW %i\n->841d778c427dadd360a088f4468a023b
+[Msg]Steam not running, achievement progress notification not displayed\n->46899835661f71c3a2ef1b247d230cd0
+[Msg]Achievements disabled, ignoring achievement unlock for %s\n->85dc1d1bd1b62082fdb2d7af1df84237
+Found: CAchievementMgr::AwardAchievement at 0x2cc076a0
+[Msg]Achievement award called but already achieved: %s\n->dc6805fa41a20afbb2c1a338be01652c
+[Msg]Achievement awarded: %s\n->a57ae91e77bc6a0f7c96ab38d1347172
+[Msg]Achievements disabled: in commentary mode.\n->e5515ae93d061539a1171cc60cc11032
+[Msg]Achievements disabled: demo playing.\n->eaf38976a21314fe64c08248ba0cf1b9
+[Msg]Achievements disabled: cheats turned on in this app session.\n->781f818ca7a509f88707366ed099a02a
+[Msg]Achievements disabled: Steam not running.\n->9b91f0dbb0ac55a5fd96fd8577b32399
+Found: CAchievementMgr::CheckAchievementsEnabled at 0x2cc07b50
+[Msg]CAchievementMgr::Steam_OnUserStatsReceived: result = %i\n->c05671e68c8a39751f04ad2ce86d61ed
+[Msg]CAchievementMgr::Steam_OnUserStatsStored: result = %i\n->23140f9343a4d9d109437dc591f62b87
+[Msg]ERROR: Ammo _%s_ found no CVar named _%s_\n->97d1c705a57fb465eb3f3992789f6052
+Found: CAmmoDef::AddAmmoType at 0x2cc13bb0
+[Msg]ERROR: Ammo _%s_ found no CVar named _%s_\n->97d1c705a57fb465eb3f3992789f6052
+[Msg]ERROR: Ammo _%s_ found no CVar named _%s_\n->97d1c705a57fb465eb3f3992789f6052
+[Msg]ERROR: Ammo _%s_ found no CVar named _%s_\n->97d1c705a57fb465eb3f3992789f6052
+[Msg]ERROR: Ammo _%s_ found no CVar named _%s_\n->97d1c705a57fb465eb3f3992789f6052
+[Msg]ERROR: Ammo _%s_ found no CVar named _%s_\n->97d1c705a57fb465eb3f3992789f6052
+[Msg]Bad sequence in GetSequenceActivityName__ for model %s!\n->dc945b586323323a0486964b45f887cf
+Found: GetSequenceActivityName at 0x2cc14a10
+[Msg]Bad pstudiohdr in GetSequenceLinearMotion__!\n->f7692ac77847378fb6b88bfd7202384e
+[Msg]Bad sequence _%i out of %i max_ in GetSequenceLinearMotion__ for model %s!\n->2f5637a912e25afdd7a1a4cfe76881c0
+[Msg]Bad sequence in GetSequenceName__ for model %s!\n->3da2b7c4bb6a49841209ab80f1ced474
+Found: GetSequenceName at 0x2cc14bb0
+[Msg]Bad pstudiohdr in GetSequenceVelocity__!\n->b32fe004c75c487491b1b0d96e3cabf8
+[Msg]Bad sequence _%i out of %i max_ in GetSequenceVelocity__ for model %s!\n->3f37b241e1bc160a07950c1d2c995ca2
+[Msg]Bad sequence in GetSequenceActivityName__ for model %s!\n->dc945b586323323a0486964b45f887cf
+[Msg]Achievements disabled, ignoring achievement progress for %s\n->6fe2151bac45ba3a4d9d4a93501d9eb2
+[Msg]Achievement count increased for %s: %d/%d\n->d1ed1ab5b85dabb66219fc54913c3a65
+[Msg]Achievements disabled, ignoring achievement component for %s\n->dc4ef0dda2fbc423003bbdafbb3d69ec
+[Msg]Component %d for achievement %s found\n->30af21f0c8839d09921c8951a13df7d7
+[Msg]Component %d for achievement %s found, but already had that component\n->3f41d4d4e9ce30e30c58e8999ba32ce2
+[Msg]ERROR: Weapon _%s_ using undefined primary ammo type _%s_\n->7f522ba54fe5b8386f7323ffdc44b672
+Found: CBaseCombatWeapon::Precache at 0x2cc1bd80
+[Msg]ERROR: Weapon _%s_ using undefined secondary ammo type _%s_\n->e6c133e440f2c2b5659a548ce753d1ed
+[Msg]Crazy %s on entity [%i][%s]\n->0c277973626818be5657ec9a7fbe5039
+[Msg]\tOrigin:           [%f, %f, %f]\n->a23f93a000bfd7630e9cfb68d1ae1d2d
+[Msg]\tAngles:           [%f, %f, %f]\n->1ec64b65c0b01545d70e5328f340b505
+[Msg]\tVelocity:         [%f, %f, %f]\n->3cde3175ce162b1fb6d728f406831a00
+[Msg]\tAngular Velocity: [%f, %f, %f]\n->cf3b44a1d305184d116715d77477a771
+[Msg]Defusing!\n->889955b0a9a85edeaec0c1750e63e6ae
+[Msg]Not defusing position, avoiding potential crash!\n->56069e656397a651333de22b001ee49b
+[Msg]CBaseEntity::PushEntity !g_Lua\n->b0d18bcb7d07624706d714ea6a1ecb38
+[Msg]CBaseEntity::PushEntity !GetLuaEntity_\n->46f73519b57bf92193de2c4255c67681
+[Msg]CBaseEntity::Push_This_Entity !GetLuaEntity_\n->dfe95c3a16f46524ba1bde4bfb66ffaa
+[Msg]Trace using: %s\n->b4a1712825ea0139b7b25243b9b75006
+[Msg]Trace found %s, dist %.2f\n->43013e26ea7fa25c5c097cb07ee47ead
+[Msg]Radius found %s, dist %.2f\n->100b6020b5955e756482cffee7cc3bdf
+[Msg]Radial using: %s\n->1141c78d5278e5993ef04888d9d505da
+[Msg]Setting CBeam to nonsprite model %s\n->4f53d3946437fbb580b714b1d0f1ea0c
+[Msg]%d entities in bone setup array. Should have been cleaned up by now\n->30076deb8e8ba8f369be60828a904dc8
+[Msg]Memory allocation of RagdollInfo_t failed!\n->875cec3cebc41db1917686b695fc9988
+[Msg]%s Interpolate at %f%s\n->b868141f1d127e065383e69e34d32367
+[Msg]%s Interpolate at %f%s\n->b868141f1d127e065383e69e34d32367
+[Msg]%s LatchChanged at %f changetime %f:  %s\n->ea81dde24a94156ef883c23916f1b642
+[Msg]%s LatchChanged at %f changetime %f:  %s\n->ea81dde24a94156ef883c23916f1b642
+[Msg]delete ragdoll due to nointerp\n->3a778f0838e40039250d7539230631bf
+[Msg]Memory allocation of RagdollInfo_t failed!\n->875cec3cebc41db1917686b695fc9988
+[Msg]%s Interpolate at %f%s\n->b868141f1d127e065383e69e34d32367
+[Msg]%s LatchChanged at %f changetime %f:  %s\n->ea81dde24a94156ef883c23916f1b642
+[Msg]Format: cl_find_ent <substring\n->2cc92acfff33b18bb072153d02b92c9f
+Found: CC_CL_Find_Ent at 0x2cc500e0
+[Msg]Searching for client entities with classname containing substring: %s\n->2edbb57d2b8f55410ae5a2a4561171f9
+[Msg]%s _entindex %d_ %s \n->24439799ff68e192522e653f1af17a04
+[Msg]Found %d matches.\n->cc6b1abe9e82126410fc1b73e8aa8e26
+[Msg]%s _entindex %d_ %s \n->24439799ff68e192522e653f1af17a04
+[Msg]Found no entity at %d.\n->8d36e65b452e594c010f82bfa18390ef
+[Msg]%s Interpolate at %f%s\n->b868141f1d127e065383e69e34d32367
+[Msg]%s Interpolate at %f%s\n->b868141f1d127e065383e69e34d32367
+[Msg]%s LatchChanged at %f changetime %f:  %s\n->ea81dde24a94156ef883c23916f1b642
+[Msg]C_BaseFlex::AddSceneEvent:  eventGetActor__ was NULL!!!\n->667ae388dcd36eaad32f8222c6252ef4
+[Msg]C_BaseFlex::AddSceneEvent:  scene or event was NULL!!!\n->b02736319d8cef839e431cf4ec21a7d1
+[Msg]Client Soundscape data dump:\n->75dd3736d5dfd98178c4bc9a42760a4f
+Found: CC_DumpClientSoundscapeData at 0x2cc617b0
+[Msg]Position: %.2f %.2f %.2f\n->13140fac3f18849438c5fdfc05cdf802
+[Msg]soundscape index: %d\n->b88706a6058d4a66990927d57c9cbfa2
+[Msg]entity index: %d\n->6ebee4362418c0725709003044f79789
+[Msg]entity pos: %.2f %.2f %.2f\n->58bfc88d71205cd1ee145475ea15a3cb
+[Msg]ENTITY IS DORMANT\n->366387f7ab7edba71a5634740d4eb659
+[Msg]Sound Positions:\n->fdfd6a92559645c63b0e0090c73f8e5c
+[Msg]%d: %.2f %.2f %.2f\n->512ea55c5f5f0a7347e272277a446cfb
+[Msg]End dump.\n->f44652fad3b527bb7e99c0de9d82fe4d
+[Msg]Pixel vis system using %d sets total _%d in free list_, %d queries total _%d in free list_\n->610eba054341b339bd0e30fc64361ce6
+[Msg]Seconds:%d Fraction:%f Sample:%d  L:%f R:%f\n->f55ce8518c2370bbf4d8a60aa97d4770
+[Msg]\n CLIENT SOUNDSCAPES \n->e38c87178489a5e645d142e1021d8ab9
+[Msg]%d: %s\n->3b4de07138ee7ceb9b899cbe4c07dc39
+[Msg]PLAYING DEBUG SOUNDSCAPE: %d [%s]\n->9d22f7b84ca1d318394e2852b1b7ac7f
+[Msg]CURRENT SOUNDSCAPE: %d [%s]\n->6869763e2a915dacb0f30a43e32b030c
+[Msg]\n\n->71d843ce41a510ff59d9ea5fada3a64e
+[Msg]Lua file %d too big, ignoring! _%lu  %lu_\n->f760ec494e8a351d4b075926a94c3d1e
+[Msg]Not net message!?\n->0e31fcc2133aeb88de846035ab4aa883
+[Msg]%s->1c481aa99d081c32182011a758f73d33
+[Msg]BuildActiveShadowDepthList: Breaking from an infinite loop. Let the developers know if you can reproduce this message.\n->e7e828238f7e8711ab9b7a500c5681a2
+[Msg]CTextureAllocator::GetTextureRect has invalid texture handle! Expect crashes!\n->9ece9fd8557aa9be162fc9bd1c2f3b22
+[Msg]%.2f %.2f %.2f\n->0f2440ed2062d868209f63ae1b32723b
+[Msg]Cutoff area %.2f\n->3e2b313c5ab8eba523b335f56a320101
+[Msg]Shadow color %d %d %d\n->fead8cb696604b64ba341a28d4281af2
+[Msg]%.2f %.2f %.2f\n->0f2440ed2062d868209f63ae1b32723b
+[Msg]Shadow distance %.2f\n->9b6bdda69a1ecf5bd7e5399d1a65faa9
+[Msg]CClientSteamContext OnSteamServerConnectFailure logged on = %d\n->47f075d407a8782d79a02ab97b97d26c
+Found: CClientSteamContext::OnSteamServerConnectFailure at 0x2ccb4970
+[Msg]CClientSteamContext OnSteamServersConnected logged on = %d\n->edc250715713bd93ea5f6262f9732e77
+Found: CClientSteamContext::OnSteamServersConnected at 0x2ccb49a0
+[Msg]CClientSteamContext OnSteamServersDisconnected logged on = %d\n->cb958253ffa1ad5a82b097d1778863ec
+[Msg]DetailProps: The map appears to use EP2 detailprops, switching detail/detailsprites!\n->f9191605794f4e3b94c6fbb334bd18e0
+[Msg]No case for Muzzleflash type: %d\n->7424a86b715a892a9c1f412b4ffe11e8
+[Msg]Nonvgui hud element %s\n->3016e36e2b8a3f095e0f532361103601
+[Msg]No such element %s\n->eccc53ca49f0905bcb7a57905892f378
+[Msg]\n->1d78758685e5e2f4efeeb490f8521abd
+[Msg]%s\n->16cfd108712175f57223c36d8e15e404
+[Msg]%s->1c481aa99d081c32182011a758f73d33
+[Msg]found %s in %s\n->30565226e1c34ca848bc60461d88f30d
+[Msg]%s matches\n->7323c5cdf987a96a5c1e37c853449e92
+[Msg]%s localization matches\n->21bdb21ef6b707200c2cd80d849b81da
+[Msg]%s not found\n->a2d524998a1df2cd6c6c5ac3c4324e8c
+[Msg]%s will be used\n->21a6611bba673870f552eee536b3ddce
+[Msg]Missing caption for %s\n->2a851e341f1b6a9352958a73bb4eb322
+[Msg]%s.%s%s->e46673ec2933892346363c60e7e9cf34
+[Msg]%s%s->f0275d2ae1aaf69b3b06259723647d35
+[Msg]_localplayer_\n\n->52b9c32b65c4e99b136e94b49358b431
+[Msg]_localteam_\n\n->48387088da5ede9b9a54e8ba17f52e80
+[Msg]_playerresource_\n\n->1f45abcd7f0a3cc426c7e074e1de79c6
+[Msg]_localplayerweapon_\n\n->7e36e602f0447c66da8596a7853faa32
+[Msg]Other replacements:\n\n->d493f46d0d24c88337895995b859088b
+[Msg]%s = %s\n->6132b9b19f3be5765b152db3d5456eb7
+[Msg]Logitech LCD Keyboard initialized\n->137e045beb31980b5d05f654cc332619
+[Msg]Must run with g15 to enable support for the LCD Keyboard\n->c8d08c4000172dc9f5655eb31d076154
+[Msg]Must run with g15 to enable support for the LCD Keyboard\n->c8d08c4000172dc9f5655eb31d076154
+[Msg]Reloading G15 config\n->162e75bd7afc9a63c4f87327d64b8c38
+[Msg]%s:  unmapped\n->df65bd03f3ab3cb85aff41eaa42cae12
+[Msg]%s:  mapped to %s _%s_\n->ce0dc41f20a4ec88c4058e00bfe61c0c
+[Msg]Using joystick %s configuration\n->b5e7b6392785b2e17f0b645873477adc
+[Msg]Advanced Joystick settings initialized\n->acbf2e1d3c3151166ebaddf88108d72f
+[Msg]In:%f Out:%f Frametime:%f\n->bfdefb188361b73352a90df87d437515
+[Msg]In:%f Out:%f Frametime:%f\n->bfdefb188361b73352a90df87d437515
+[Msg]WARNING! User command buffer overflow_%i %i_, last cmd was %i bits long\n->b7e514eaa93c51d2dccc00551bfa934b
+Found: CInput::WriteUsercmdDeltaToBuffer at 0x2cd0b530
+[Msg]%i gametitle fade\n->754d0cc0340aac56ec885fbff9418a58
+[Msg]%.0f fps  %s\n->4d373980af7b16fd542be0dbbf10b673
+[Msg]Removing crazy physics entity %s#%i!\n->fce9c15ee2ffb643d53514f01c2403ca
+[Msg]CLIENT:  %s_%s_ thinking for %.02f ms!!!\n->276575c85c6b2bd4adf4c1067fc7fc3d
+Found: C_BaseEntity::PhysicsDispatchThink at 0x2cd2dbd0
+[Msg]Got a NaN velocity on %s\n->c5fd6dec79bd096b17a8df06d2df505e
+Found: CBaseEntity::PhysicsCheckVelocity at 0x2cd2fa50
+[Msg]Got a NaN origin on %s\n->ad9da643d7faa8b5976f188a8e92138b
+[Msg]%s LatchChanged at %f changetime %f:  %s\n->ea81dde24a94156ef883c23916f1b642
+[Msg]Reinitialized %i predictable entities\n->5a5ae1628d3bed60a41a44cdd01f6fb3
+Found: CPrediction::ReinitPredictables at 0x2cd40a00
+[Msg]Shutdown %i predictable entities and %i clientcreated entities\n->91dddb155e58cbfc3f61f2052dd6d221
+Found: CPrediction::ShutdownPredictables at 0x2cd40f70
+[Msg]Removing unacked predicted entity:  %s created %s_%i_ id == %s : %p\n->2168aae246fba0c3d399d2e89163ae9f
+Found: CPrediction::RemoveStalePredictedEntities at 0x2cd41d30
+[Msg]\n->1d78758685e5e2f4efeeb490f8521abd
+[Msg]%03i %s::%s  %s->c22df8897d99c30e179f70dcb3d32e8f
+[Msg]%i %s %s : %s\n->5b75ce9267da0227785cd582d48ed3e9
+[Msg]cl_pred_track:  Unknown ent index %d\n->c76bfad064e6cf595af60380786ca89e
+Found: cl_pred_track_callback at 0x2cd43c50
+[Msg]No prediction datamap_t for entity %d/%s\n->4bdc8d3a094ddfca384b5d8d15ceeb2a
+Found: CValueChangeTracker::SetupTracking at 0x2cd43c50
+[Msg]No field %s in datamap_t for entity %d/%s\n->570d4ba6d72d75de7f9c67ab062295e6
+[Msg]*** ERROR: C_ServerRagdoll::InitModel: %s missing vcollide data ***\n->9fcf7931be80ecdef5a65a30602dfaf6
+[Msg]Invalid ragdoll, too many elements!->def5b32f63c716282ad3de42c28d9bb6
+[Msg]Invalid ragdoll, too many elements!->def5b32f63c716282ad3de42c28d9bb6
+[Msg]%s Interpolate at %f%s\n->b868141f1d127e065383e69e34d32367
+[Msg]%s Interpolate at %f%s\n->b868141f1d127e065383e69e34d32367
+[Msg]%s LatchChanged at %f changetime %f:  %s\n->ea81dde24a94156ef883c23916f1b642
+[Msg]Invalid ragdoll, too many elements!->def5b32f63c716282ad3de42c28d9bb6
+[Msg]Expected %s found %s _ raw %s _! _prev: %s_\n->8c5ba6c36a228546fa86d9ed7e973368
+[Msg]Field type name may have changed or inheritance graph changed, save file is suspect\n->c55f7689bec4b6458e3e2fdfc567eaf5
+[Msg]Failed to find function %s\n->37dc0f36ba883fc4b20f21e82c2d5e06
+[Msg]%8.3f[%d] %s:  %s->a678e8b4070acb350288eb72190632f7
+[Msg]%s %s->29bf226e186bf57b52fac1b0ba1f88ff
+[Msg]Cant play until a game is started.\n->d0df8a4c2a71c8d04704b16dc3e8dd06
+[Msg]Invalid starting amplitude value in envelope!  _Cannot be 1_\n->7873fb1aa51b0662bb465c15713a99db
+[Msg]Invalid starting duration value in envelope! _Cannot be 1_\n->513b35e9392942ea9aa2173431ad2392
+[Msg]DEBUG: Clearing CSoundPatches after soundsound...\n->9d16c3a4d1534acd64191d752f4bfc7f
+[Msg]Current sound patches: %d\n->74cc122d583b5343ea5e9b44502bf311
+[Msg]Setting CSprite to nonsprite model %s\n->af10bf4a834446f836d37070c8a110e1
+[Msg][%8.3f] hitch on %s:%s:%d:%d\n->6caab9c9ae0b14c6dc449c6104e25495
+[Msg][%8.3f] stall on %s:%s:%d:%d\n->eb897517c59e8530b24cfb887446a12f
+[Msg][%8.3f] stall blend %.2f on %s:%s:%d:%d\n->feb3d4c58dba024a271f293c6a936914
+[Msg]m_bSendHandle: %d, m_Handle.Get: 0x%p\n->63ac72a7bc0fe56dd7d5104e13f76047
+[Msg]Using scheme %s...\n->4dfe9536f5da8be91fc430183ab58198
+[Msg]Overview: scale %.2f, pos_x %.0f, pos_y %.0f\n->23ce3162fc907e1bf353aaeb44ae48f6
+[Msg]Water material: %s dist to water: %f\nforcecheap: %s forceexpensive: %s\n->2cc64cb8accc7be475344798a85e98e2
+[Msg]CVoiceStatus::HandleVoiceMaskMsg\n->f0b9996680a3c60c481b51ce037d6766
+[Msg]m_AudiblePlayers[%d] = %lu\n->1f57789b8d38aa2cfbfc1251563bdd56
+[Msg]m_ServerBannedPlayers[%d] = %lu\n->634ca644aae98be07cc27740f383a712
+[Msg]CVoiceStatus::SetPlayerBlockedState part 1\n->aa6d6ec7666bd557c2aa4146f81d6359
+Found: CVoiceStatus::SetPlayerBlockedState at 0x2cd8dc10
+[Msg]CVoiceStatus::SetPlayerBlockedState part 2\n->8e9600caa196be6f89d3abd71a4bb8c8
+[Msg]CVoiceStatus::SetPlayerBlockedState: setting player %d ban to %d\n->a61d260d92f41012faf1534c10571584
+[Msg]CVoiceStatus::UpdateServerState: g_bLevelInitialized\n->f4b726ed49493bf7f1aac99a9a160c03
+Found: CVoiceStatus::UpdateServerState at 0x2cd8dd20
+[Msg]CVoiceStatus::UpdateServerState: Sending %s\n->2e8bd3835ac6a833ed8607be4e3d69e3
+[Msg]CVoiceStatus::UpdateServerState: no change\n->689ecdd420b9504356ebf1cfa09c7556
+[Msg]CVoiceStatus::UpdateServerState: Sending %s\n->2e8bd3835ac6a833ed8607be4e3d69e3
+[Msg]CVoiceStatus::UpdateSpeakerStatus: ent %d talking = %d\n->2806c3d2de460831ac8c4ebbd6fe1438
+Found: CVoiceStatus::UpdateSpeakerStatus at 0x2cd8dff0
+[Msg]CVoiceStatus::HandleReqStateMsg\n->35666894923ba9d0e98fb5bda3a2d08a
+Found: CVoiceStatus::HandleReqStateMsg at 0x2cd8e0c0
+[Msg]%s->1c481aa99d081c32182011a758f73d33
+[Msg]%s LatchChanged at %f changetime %f:  %s\n->ea81dde24a94156ef883c23916f1b642
+[Msg]Player %d doesnt have gesture slot %d any more.\n->080599bdacd903fce9a210c4ab03afc6
+[Msg]Gesture slot %d pointing to wrong address %p. Updating to new address %p.\n->8a972c27c6452920a3488123e7314745
+[Msg]Thumbs: %i = %i\n->af7947860d9a7c362cbf849a6bd42f46
+[Msg]%s->1c481aa99d081c32182011a758f73d33
+[Msg]->d41d8cd98f00b204e9800998ecf8427e
+[Msg]%s->1c481aa99d081c32182011a758f73d33
+[Msg]CParticleSystemMgr compiled using an old IMaterialSystem\n->ff57bca53bb3234437a19580bd122aa0
+[Msg]Warning: Skipping command %s\n->b784369ec85e27ea42764790d9e71b42
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Already have converter for type %s, ignoring...\n->c6daf07da24a6de9dd096ecf25c55b8e
+[Msg]Panel object is fucked  might be using an older Lua interface.. why wasnt it cleared??\n->1ba273511f74c909c57084c21289d3dc
+[Msg]NOT A PANEL!!!\n->d387823b3100fa357b45991dc86ed5a3
+[Msg]%s\n->16cfd108712175f57223c36d8e15e404
+[Msg]%s %s\n->7660b291db72f4205b280f47d74b337c
+[Msg]No such Panel Animation class %s\n->333d21692c6c50f8ad995fc76c9d74d9
+[Msg]successfully created panel %s\n->434e3823410d1b3c6286459d8dfc85e7
+[?DevWarning@@YAXPBDZZ]Auto Refresh  Circular hierarchy for %s.\n->1665377f48e66b68d9fdc7f54e31115c
+[?DevWarning@@YAXPBDZZ]Auto Refresh  No root found for %s.\n->94d444dfca17d25843e2c16f05c8a388
+[?DevWarning@@YAXPBDZZ]SendLua/BroadcastLua/lua_run_cl failed with code: %s\n->b1f79ef426afc3e9c8172d78277751f6
+[?DevWarning@@YAXPBDZZ]SetFileContents with no table!\n->56a36e22f52ff3a738f11fa8e5a924f2
+[?DevWarning@@YAXPBDZZ]Client requesting crazy file update number _%i_\n->327ff5cc1c7b4ace81cdb8c75ef8aa10
+[?DevWarning@@YAXPBDZZ]Tried to create font %s from a game font %s, not supported!\n->05ae5488a2a4fabc567dcf5eda652ea5
+[?DevWarning@@YAXPBDZZ]Tried to create font %s from a game font %s, not supported!\n->05ae5488a2a4fabc567dcf5eda652ea5
+[?DevWarning@@YAXPBDZZ]mod_studio: MOVETYPE_FOLLOW with no model.\n->cc6546f9fe98f575d106d07655c8e09d
+Found: C_BaseAnimating::FindFollowedEntity at 0x2cc3f6b0
+[?DevWarning@@YAXPBDZZ]Not rendering Non Solid Ropes, about to crash!\n->130e7725a4e227d192599c92bdc41065
+[?DevWarning@@YAXPBDZZ]Not rendering Solid Ropes, about to crash!\n->5c7504cdfb8a7fa7a7a9d46a252a3922
+[?DevWarning@@YAXPBDZZ]Cant find soundscape %s\n->3fddab66a32b2dca820f7c277d9646c0
+[?DevWarning@@YAXPBDZZ]Warning! DrawSpriteModel/env_sprite is rendering a material _%s_ with a non sprite shader %s! Expect crashes!\n->d0e0bee8839289a4ee294e94075cd262
+[?DevWarning@@YAXPBDZZ]Client: Missing precache for particle system %s!\n->308bd8eb3a749c996cecc1b96c1eaf8b
+[?DevWarning@@YAXPBDZZ]%s__: Skipping shadow with invalid client renderable _shadow handle %d_\n->018ea060b68622ed093e4a6592dad7d4
+[?DevWarning@@YAXPBDZZ]Cannot update control point %d for effect %s.\n->00dca608e2839644f19c77188bfd0bfd
+[?DevWarning@@YAXPBDZZ]AllocTouchLink: failed to allocate touchlink_t.\n->bad91d5fa9e3744d44d7170888d92023
+[?DevWarning@@YAXPBDZZ]PropBreakableCreateAll: Could not create model %s\n->6688c59affe5d8766cb5f6af9e4bbfab
+[?DevWarning@@YAXPBDZZ]PropBreakableCreateAll: Could not create model %s\n->6688c59affe5d8766cb5f6af9e4bbfab
+[?DevWarning@@YAXPBDZZ]CSoundPatch::ResumeSound: Lost EHAndle on restore  destroy the sound patch in your entitys StopLoopingSounds! _%s_\n->e4c81e85c6ac902d34400c4682f2f6fc
+[?DevWarning@@YAXPBDZZ]CSoundPatch::Update:  Removing CSoundPatch _%s_ with NULL EHandle\n->9bd62fd70d7a1ff3c49fe313a9482a29
+[?DevWarning@@YAXPBDZZ]Cant get key value\t%s from file %s.\n->a39fb3342a3e4875e65e0b9de448081e
+[?DevWarning@@YAXPBDZZ]Attempted to use an unsupported muzzle flash type %i.. new particle effect needed here!\n->c4c4bb22242c0b34e06a46638e543e82
+[?DevWarning@@YAXPBDZZ]CCommand::Tokenize: Encountered command which overflows the tokenizer buffer.. Skipping!\n->f1fbec2a84f794c12acf6db8ab99d87c
+Found: CCommand::Tokenize at 0x2cf2ea20
+[?DevWarning@@YAXPBDZZ]CCommand::Tokenize: Encountered command which overflows the argument buffer.. Clamped!\n->e7677e3004b85bd22108e8e6103c4107
+[?DevWarning@@YAXPBDZZ]Module %s is a debug build\n->25994a145d2818aabc2675aaffca7847
+[Warning]WorkshopDL: There is no file to mount for %llu!\n->845b54f5933917db775a84560266da0c
+[Warning]WorkshopDL: Failed to mount %s\n->c7dc30922d541dc245581972a49923c6
+[Warning]WorkshopDL: Failed to get details for file %llu\n->0ed4d0d08d85c3cc71f56c3f38cf7668
+[Warning]WorkshopDL: Failed to initialize download for addon %s _%llu_\n->f5c9f48e08ec5954cb55a12a08b0ee1e
+[Warning]WorkshopDL: Failed to GetItemInstallInfo for %s _%llu_\n->f777b0ebe27c4f53c8736f291220b55b
+[Warning]WorkshopDL: Failed to read addon file for %s _%llu_\n->e4f0dc44c1300ec721487d47b0b79c82
+[Warning]WorkshopDL: Failed to extract to %s\n->1044854fdb35821d94ffade41e1ddd21
+[Warning]WorkshopDL: Failed to open file %s\n->9818a7812d55deb2e0c9d3f7943f5291
+[Warning]WorkshopDL: %s _%llu_ failed to download, %s\n->4d633b77d689c5cf7a7a8496937c4bbe
+[Warning]WorkshopDL: Received wrong downloaded item? Got %llu, expecting %llu\n->8e99124eea83b176f7e9f8d12581218d
+[Warning]WorkshopDL: ReceivedBatchInfo failed  %s\n->2435730c36e2153b646a1885e976dae5
+[Warning]WorkshopDL: ReceivedBatchInfo failed for item %i\n->f0306269859b9095abece3e9dcee1c3d
+[Warning]WorkshopDL: Not downloading/mounting addon %s _%llu_: %s!\n->146692cb6a5051bb592a8d7d2aad32ae
+[Warning]WorkshopDL: Failed to GetItemInstallInfo for %s _%llu_ to mark as used\n->c8da3e97372fa2f59e6b5fd36f2c63ad
+[Warning]WorkshopDL: GetItemDownloadInfo failed for %llu too many times or download is stuck, aborting...\n->0d9267e0da99cb3a0890e7b7c248f43e
+[Warning]WorkshopDL: GetItemDownloadInfo failed for %llu, trying...\n->f18fdafeb4f1c60c5eea9112f01b0e26
+[Warning]WorkshopDL: Failed to GetItemInstallInfo for %s _%llu_\n->f777b0ebe27c4f53c8736f291220b55b
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Error Creating Render Target %s!->f28653df815413d948409d47001a59a9
+[Warning]Failed to add language file %s, trying different method...\n->32a5c589570bd86f6a981aeb348aefa1
+[Warning]Failed to load language file %s  %i\n->e5fd78a439372f3e151401c2075853a7
+[Warning]CV_GlobalChange_ToLua is not called in Main Thread!\n->36f1df38776b3d62b300fa05f4edc0f5
+[Warning]RunScriptsInFolder: Couldnt run scripts in %s: no gLUA!\n->7a0985cabe330602fb1f3ebdee1440cd
+[Warning]Couldnt find singleplayer file list?\n->29f077fc1adeb7e705bc5529ab76d29a
+[Warning]This should never happen  datapack file entry has no hash! _%s_\n->5479f51c71228e87b5de9e26bb6cfc5f
+[Warning]This should never happen  datapack file entry has no data! _%s_\n->b265a75489e6b1a12ecdda1ee15a88e3
+[Warning]Couldnt extract from datatable _%s_ _%i_\n->d388913dd57a9d7629c317ceb2868329
+[Warning]Hash mismatch for file %s! _%s %s_\n->664ef8fe60ef629fea39a4cff5e13035
+[Warning]RequestFiles with no table!\n->08b943bc144322ba10c0468cb0e35cf1
+[Warning]Downlaoded .lua file %s, but it has no content?\n->c2c7816a9cf571f9504986ef7a3f9fb8
+[Warning]Unable to save! Lua already shut down!\n->4cefdc5a465686422adc58c9e794e686
+[Warning]Unable to Restore Lua! Lua not active!\n->55b6f7469e41b3087f8f1d599f1ecac5
+[Warning]Unable to Restore Lua! Lua not fully loaded _no saverestore table_!\n->424ff7418e29cc52f0a58d5759722b5c
+[Warning]Too many NWVar names, could not add name %s\n->f56424a809c771032359ca979d778360
+[Warning]CScriptedEntity: Entity isnt entity!\n->94874e283fb4d4a062b4d96d1e48279f
+[Warning]CScriptedEntity: Table isnt table!\n->137581964249dba250df7a0959ef19d0
+[Warning]Error creating %s _Make sure the file is AddCSLuaFiled and there arent any errors!_\n->f92c927bbe7d40b8b710be1b5c06f8bf
+[Warning]Error: Tried to make a SENT _%s_ but it didnt have a Type key!\n->b6bd797ab69dc9d18654de7e3c92e2b0
+[Warning]Error: Tried to make a SENT _%s_ but the Type _%s_ was invalid!\n->8a0747f2789633a40a3555b2af16364a
+[Warning]CREATING ENTITY  ALREADY HAS A LUA TABLE! AND IT SHOULDNT!\n->8e66ccc61bff6a3a14e93126af15b1c1
+[Warning]scripted_ents library is not a table. Make sure your addons are not overriding the scripted_ents global variable.\n->43340066fdad568830418e2f8ed16b44
+[Warning]scripted_ents.%s is not a function. Make sure your addons are not overriding it.\n->5d33a9de2c940f93b114a12501d10a46
+[Warning]weapons librbary is not a table. Make sure your addons are not overriding the weapons global variable.\n->5da6aaf24a901c12fa58ee665b8f6d56
+[Warning]weapons.%s is not a function. Make sure your addons are not overriding it.\n->f9b6799ea070a39485c7c9586b9adb73
+[Warning]Local file is overriding addons file! %s _%s_\n->80f86613e84f04b1da166be8ae68c12e
+[Warning]Warning! Detected missing cam.End2D call!\n->c1e8736ef56ead20ea13198b0a49256e
+[Warning]Warning! Detected missing cam.End3D call!\n->6bbb28d376342524a9727a3d4c24d9fd
+[Warning]Warning! Detected missing cam.End3D2D call!\n->e8d4a3d3b28e32dd04c683804ffe1b14
+[Warning]Warning! Detected missing render.PopCustomClipPlane call!\n->65ddb97c24e824896fe7bf9b5263d02c
+[Warning]You have tried to create a render target via Lua. This is now disabled, its way too slow. Check out garrysmod\\settings\\render_targets\n->6da72c9d88ea2fb1175d9ac94ab57a59
+[Warning]Warning! Creating an RT with TEXTUREFLAGS_ENVMAP! This will cause crashes! Bailing..\n->5de3148a434323edfeb74fb0f98ccaac
+[Warning]cam.PopModelMatrix: Matrix stack is empty!\n->f42c8e7e4000d78d2e2f7e6fec000faa
+[Warning]PanelFrame no longer exists!\n->987769ff21488f05c35f5c399b1d995a
+[Warning]Dupe Filesize is crazy _%i_\n->781746167f456f8e60825e3a7cf7505d
+[Warning]Trying to create entities too early! _%s_\n->317ce55c774cbecfdffbbe30c452c977
+[Warning]Aborting HTTP request after receiving too many headers\n->9610a1fc84090c8c3dc641a2b74f4720
+[Warning]Trying to set a forbidden header %s\n->92713b0999116d3d4fe80b75cd1b54d6
+[Warning]Aborting HTTP request after receiving too much data\n->6a8edf46687452968541e592c723d022
+[Warning]Got Lua Message  but havent got usermessage global table!->b1200d65fe544ce3ff4c5f898af539cb
+[Warning]Message was: %s\n->7721e40b7226b3b09a3771de610f32af
+[Warning]Got Lua Message  but havent got usermessage.IncomingMessage function!->06e2629a3148577f18dc70e68fb4ec54
+[Warning]Message was: %s\n->7721e40b7226b3b09a3771de610f32af
+[Warning]permissions library is not a table. Make sure your addons are not overriding the permissions global variable.\n->ca1d9d99f01cad4c6c6f9d2c7acaa725
+[Warning]permissions.IsGranted is not a function. Make sure your addons are not overriding it.\n->ba8d537eb7bafa87b550f48d460cb89e
+[Warning]DownloadUGCManager::SetActive: Theres already a download! This should never happpen\n->4784e78150850b8626edd3a02c5aa03c
+[Warning]k_UGCQueryHandleInvalid!\n->745c7d8898ff521581c1b0e716723912
+[Warning]steamworks.DownloadUGC: Failed to GetItemInstallInfo for %llu\n->37165002fcdaa2191a2823f96a4ff2b3
+[Warning]Addon %s _%llu_ was created with a 3rd party tool, which might cause install/load issues.\n->595f871c245fae766a5958d6a83d8d22
+[Warning]steamworks.DownloadUGC: This should never happen: Addon %s _%llu_ is 0 bytes!?\n->e8683d3c2a7f1d5ce0fa2b5907d33b25
+[Warning]steamworks.DownloadUGC: Failed to get SteamUGC file for %llu\n->337a0e0461598c7a2ed83ad9b7ff302b
+[Warning]steamworks.DownloadUGC: Failed to download addon %llu, %s\n->2cc8c326f65e1225783f10b5fb705975
+[Warning]steamworks.DownloadUGC: OnResult received null result for %llu\n->a30e6a36899e46a1fbbd4ea45c102ae6
+[Warning]steamworks.DownloadUGC: Failed to get addon info for %llu, %s\n->f1cdbfabea5bf5ce2744d89f878302d5
+[Warning]DownloadUGC: GetQueryUGCResult failed for item %llu\n->5cd50e06ef7bfa43aa80028263af71c4
+[Warning]DownloadUGC: OnItemInfo got wrong ID %llu, expected %llu\n->d3a359ceb31d5bb09f4f2486e09f7f10
+[Warning]steamworks.GetList failed! %s\n->4c2bcb3367dbabbdd81c4941e8cab890
+[Warning]steamworks.FileInfo__ failed _%s_\n->9471b5f106b6543a4e3e1c833f744058
+[Warning]steamworks.DownloadUGC: Failed to GetItemInstallInfo for %s _%llu_ to mark as used\n->74477119261a6fa7d69ae0d98dd5e982
+[Warning]steamworks.DownloadUGC: Failed to initialize download for addon %llu\n->65e3d063508f1e5816dc685a8083d394
+[Warning]steamworks.DownloadUGC: Failed to open addon file %s during Success__\n->40f50afe6a4f5be0ca2bb531da392ccb
+[Warning]steamworks.DownloadUGC: This should not happen  failed to write timestamp to %s!\n->28b9246c832bcbcd44cbedc7ab599e0f
+[Warning]steamworks.DownloadUGC: Extraction failed.. Oh oh! _%s_\n->f18d814988273de22265d1bccf54381b
+[Warning][UHOH!] Invalid HitboxSet %i of %i on model %s.\n->a321b77d884ec1de1775e408f86b9e33
+[Warning]Global.Mesh Warning! Attempted to use a material %s with vertex format 0!\n->5a92f0907fa4c6c405782d71e0de7a0d
+[Warning]Global.Mesh: ERROR CREATING NEWMESH!\n->8232b002e66793f3f591f0bae2620dc7
+[Warning][Deprecated] Entity.Entity [%s]\n->49a38fcf66f230a9118d47d2a33fbb98
+[Warning]Global NULL is not an entity! It has been replaced somehow\n->f2779fb5304a65949b79b40d0cd5495a
+[Warning]Global NULL is not an entity! It has been replaced somehow\n->f2779fb5304a65949b79b40d0cd5495a
+[Warning]Global NULL is not an entity! It has been replaced somehow\n->f2779fb5304a65949b79b40d0cd5495a
+[Warning]Entity:VPhysicsInitStatic__  Failed to create physics for entity\n->c421fe56da75a0f9ffd671fcd926ba7b
+[Warning]Entity:PhysicsInit__  Failed to create physics for entity\n->85b4ee30d215e580262719b47b3f91a8
+[Warning]%s[%i]:SetAngles_ %f %f %f _: Ignoring unreasonable angles.\n->27fb1f771e1c4ec2c4b2c8422183f41f
+[Warning]Model missing: %s\n->a30d3bf95cb27bc8c9246fe030d2ed61
+[Warning]%s[%i]:SetPos_ %f %f %f _: Ignoring unreasonable position.\n->234ee4641bb90706f3d96f99290ee445
+[Warning][Deprecated] Entity.Entity [%s]\n->49a38fcf66f230a9118d47d2a33fbb98
+[Warning]Global NULL is not an entity! It has been replaced somehow\n->f2779fb5304a65949b79b40d0cd5495a
+[Warning][UHOH!] Invalid HitboxSet %i of %i on model %s.\n->a321b77d884ec1de1775e408f86b9e33
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]PhysObj:SetAngles_ %f %f %f _: Ignoring unreasonable angles.\n->555e20781bc911b3625ecbd51f5079f3
+[Warning]PhysObj:SetPos_ %f %f %f _: Ignoring unreasonable position.\n->45f68bbefc092423fdc0735613730f90
+[Warning]%s[%i]:SetPos_ %f %f %f _: Ignoring unreasonable position.\n->234ee4641bb90706f3d96f99290ee445
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]***\nShared activity collision! %s<%s\n***\n->a85799e2ab7c27e583811abc2e3f5a86
+[Warning][UHOH!] Invalid HitboxSet %i of %i on model %s.\n->a321b77d884ec1de1775e408f86b9e33
+[Warning][UHOH!] Invalid HitboxSet %i of %i on model %s.\n->a321b77d884ec1de1775e408f86b9e33
+[Warning]Error reading weapon data file for: %s\n->ee6ea8172845834e6a61bf0011ae2d08
+[Warning]Clamping ApplyAbsVelocityImpulse_%f,%f,%f_ on %s\n->f92fb5f8cb2b7a90c3b354afba4d02b7
+Found: CBaseEntity::ApplyAbsVelocityImpulse at 0x2cc1d2b0
+[Warning]Discarding ApplyAbsVelocityImpulse_%f,%f,%f_ on %s\n->80b323bbde5de803c4cf6512389c6e50
+[Warning]%s[%i]: Changing collision rules within a callback is likely to cause crashes!\n->200a04bcadfb7c7cf3fec763353dde89
+[Warning]SetLuaTable: Wasnt a table!\n->67ca6ed06aae548b04a723de629d1d21
+[Warning]Overwriting physics object for %s\n->284beb63e4a2996b9355a6b2b841f7a3
+[Warning]Overwriting physics object for %s\n->284beb63e4a2996b9355a6b2b841f7a3
+[Warning]Ignoring bogus angles _%f,%f,%f_ from vphysics! _entity %s_\n->2bb0a795d1fde608a90672e3e153b1a0
+[Warning]Ignoring unreasonable position _%f,%f,%f_ from vphysics! _entity %s_\n->86b73829baaf8f26f1e3cd8940dc0fa2
+[Warning]user_context <context id <context value\n->240e4d668145e6682375329a6a3985ad
+[Warning]user_property <property id <property value\n->f497cdc00d42e4eced7cb203d3182a73
+[Warning]classname %s used to create wrong class type\n->1d8a5574aa657c2a9c9336afa30912ac
+[Warning]Model has IK errors.. %i/%i\n->4767772693e1f1449419550eac4de258
+[Warning]Out of bounds bone in CIKContext::AddDependencies %i / %i of %i\n->65dc385bbf1cc96b5e726f1dd4756554
+[Warning]Warning! %s animation requested bone %i, but model only has %i!\n->43fde454f83bc4b95130bd90c1c04d00
+[Warning]Crash prevented: Studio_IKSequenceError: panim has a nullptr element\n->8cb52913f7de48e1b4c3b6e86ca5d843
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]C_BaseAnimating::BecomeRagdollOnClient failed. pRagdoll:%p bInitBoneArrays:%d bInitAsClient:%d\n->734cfde804fdb031aefc4b34995201cb
+Found: C_BaseAnimating::BecomeRagdollOnClient at 0x2cc3c4c0
+[Warning]Failed to find attachment point specified for particle effect in model %s keyvalues section. Trying to spawn effect %s on attachment named %s\n->1ca9df7fd6f4dfdecb7f4342ee468938
+[Warning]Invalid attach type specified for particle effect in model %s keyvalues section. Trying to spawn effect %s with attach type of %s\n->99004b384261c3dc7922bbbce833fe12
+Found: C_BaseAnimating::DelayedInitModelEffects at 0x2cc3e710
+[Warning]%s[%d]: no sequences?\n->37b3b96e8b947be50f74ce203319dafe
+Found: C_BaseAnimating::DoAnimationEvents at 0x2cc3ec50
+[Warning]Attached %s _mod_studio_ to %s _%d_\n->6301e216687be53e13fcf9d2ef67813e
+[Warning]Invalid attach type specified for particle effect anim event. Trying to spawn effect %s with attach type of %s\n->81d00ad0c9d582ba2dc7e56614ad38aa
+[Warning]Failed to find attachment point specified for particle effect anim event. Trying to spawn effect %s on attachment named %s\n->19880f5551bbb8b05a45bc98c8274a7b
+[Warning]Invalid attach type specified for particle effect anim event. Trying to spawn effect %s with attach type of %s\n->81d00ad0c9d582ba2dc7e56614ad38aa
+[Warning]Failed to find attachment point specified for particle effect anim event. Trying to spawn effect %s on attachment named %s\n->19880f5551bbb8b05a45bc98c8274a7b
+[Warning]Failed to find specified particle effect. Trying to add CP to %s on attachment named %s\n->8a3c0ba8d60e7825218fcc7e6ad16d86
+[Warning]SetupBones: invalid bone array size _%d  needs %d_\n->1dd5c1f262a67006d887bf295deb3f32
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CallDTVarLuaProxy: DTVar_ReceiveProxyGL is not a function!\n->42250d81601ccd5769aa54d72b31a06f
+[Warning]Cant find factory for entity: %s\n->5a66c14bb690a16ff78675d94955483c
+[Warning]ERROR:  Cant draw studio model %s because %s is not derived from C_BaseAnimating\n->205911772388c3cd23a63bbcbc0c1ce6
+[Warning]ERROR:  Sprite models not supported any more except in legacy temp ents\n->0dab37beacaafb96ecad789b6ae78e1f
+[Warning]C_BaseEntity::UnlinkFromHierarchy__: Entity has a child with the wrong parent!\n->9645e1dcd5bbfca4e4005a398007e000
+Found: C_BaseEntity::UnlinkFromHierarchy at 0x2cc59ac0
+[Warning]Unable to find mapping for flexcontroller %i, settings %p on %i/%s\n->7a46544a7862cb6342df6d7612de6049
+[Warning][UHOH!] Invalid HitboxSet %i of %i on model %s.\n->a321b77d884ec1de1775e408f86b9e33
+[Warning][UHOH!] Invalid HitboxSet %i of %i on model %s.\n->a321b77d884ec1de1775e408f86b9e33
+[Warning]env_screenoverlay couldnt find overlay %s.\n->30c49b9127dc017d6e0110af981324f2
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]Encountered func_breakablesurf that has a material applied to more than one surface!\n->117427627e8dcd7427a1bbda4136bb5e
+[Warning]CUtlMultiList overflow! _exhausted memory allocator_\n->43fe5df66d8f5339e40722002b034ce5
+[Warning]CUtlMultiList overflow! _exhausted index range_\n->007d9230f793e9ad61bb6253bb7cc880
+[Warning]CUtlMultiList overflow! _exhausted memory allocator_\n->43fe5df66d8f5339e40722002b034ce5
+[Warning]CUtlMultiList overflow! _exhausted index range_\n->007d9230f793e9ad61bb6253bb7cc880
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CRopeManager::GetNextSegmentFromCache too many segments for cache!\n->94bd3e02b1d99a870cae3f09975fe3b5
+Found: CRopeManager::GetNextSegmentFromCache at 0x2cc83c00
+[Warning]C_RopeKeyframe::FinishInit couldnt find rope %s\n->03d2efe796ad357be07330c1efc6e033
+[Warning]Unable to restore binary scene %s\n->1f02351171976aaf671cf90c1a8aae3d
+[Warning]vgui_slideshow_display: Trying to request ID %i out of %i\n->b7e906b62ff1746844d8de6ee246b44c
+[Warning]C_SoundscapeSystem::Init:  Manifest %s with bogus file type %s, expecting file\n->6b5ac15c731cc9a08578e5dd7893dc40
+[Warning]C_SoundscapeSystem::Init:  Manifest %s with bogus file type %s, expecting file\n->6b5ac15c731cc9a08578e5dd7893dc40
+[Warning]GetSpriteAxes: Bad sprite type %d\n->22ea238565cc012f03a12248de41b0c2
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]PVS notifier not in m_PVSNotifierMap\n->41dc5c7c3e19e0cd3219768de0b5de0f
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]Too many dirty renderables!\n->fc8bcacf49e873f5137e71f390af1c06
+[Warning]CUtlMultiList overflow! _exhausted memory allocator_\n->43fe5df66d8f5339e40722002b034ce5
+[Warning]CUtlMultiList overflow! _exhausted index range_\n->007d9230f793e9ad61bb6253bb7cc880
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]Too many depth textures rendered in a single view!\n->f9260d587b23c15603775495771dcc2e
+[Warning]Too many shadow maps this frame!\n->b3457440e7b0e01f74dc95a00aa00a05
+[Warning]!!!CRASH: modelinfo became nil!!!\n->02e4f480c68939600f618bb8f0d96ee4
+[Warning]Prevented crash! pRenderable is NULL while enumerating shadows.\n->3607bf781a2ee8a74c2cb3537e9eebd9
+[Warning]CClientShadowMgr::UpdateProjectedTexture can only be used with flashlights!\n->b71e1cc30ccbe29c779554425e108c4e
+[Warning]Cannot find color correction lookup file: %s\n->bfcb52e996855f9f7b18a7739a7c5959
+[Warning]Refusing to load lightstyle maps for detail props past 65530 to avoid crashing!\n->ee89db1ad6bfc7added179bdd778f5ce
+[Warning]Map uses old detail prop file format.. ignoring detail props\n->a82a09eb3afb63fd443df46e97d66353
+[Warning]Detail prop model %s is using vertexlit materials!\nIt must use unlit materials!\n->29e7f097576adb3ed5b91b9f7a89082e
+[Warning]Refusing to load lightstyle maps for detail props past 65530 to avoid crashing!\n->ee89db1ad6bfc7added179bdd778f5ce
+[Warning]CBaseEntityList::AddNonNetworkableEntity: no free slots!\n->44c13c04a6816bfba27ec632db91f057
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]***\nShared<Private Event collision!\n***\n->4b7a5c6443217ee41c91d40f98a90531
+[Warning]Game paused time showing up negative _rt %f pausestart %f_\n->2a36bffeb2fbb37791b8f1ce76f98472
+[Warning]EVENT_LEVELSHUTDOWN:  with negative elapsed time _rt %f starttime %f_\n->eacd0b9e4a583e7dd276098a570d7176
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]No caption found for %s\n->0e98bd3359cc625da73a581175f3130a
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]Unknown interpolation type %d\n->5df59cd9a46dd24ca2cd62f8218dcccf
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CEntityMapData::GetNextKey: EOF without closing brace\n->90926599d7cb8714f930884289f01e8f
+[Warning]CEntityMapData::GetNextKey: closing brace without data\n->2ad3c76552c6653b258f49f71fb40b8a
+[Warning]CEntityMapData::GetNextKey: closing brace without data\n->2ad3c76552c6653b258f49f71fb40b8a
+[Warning]CEntityMapData::GetNextKey: EOF without closing brace\n->90926599d7cb8714f930884289f01e8f
+[Warning]Trying to load more than 9 menu items in voicecommands.txt, extras ignored->126e2c55107bf9158c13b7da7143a21b
+[Warning]Couldnt find metaclass definition file %s\n->76ba8f2c7fdf582e41428432ece5d1ef
+[Warning]Detected one or more errors parsing %s\n->7b2e3cfbef96b63a6db524248dadf8a5
+[Warning]Unable to find type of meta class %s in file %s\n->93f7503dd20113f9d06c0515e2fcacf1
+[Warning]MetaClass missing for %s\n->93aba7ecccfe5913b25c3e6b385a9020
+[Warning]Couldnt scan four color values from %s\n->cae3826c60a4afa48c9bea11db94344d
+[Warning]CParticleMgr::Init:  Manifest %s with bogus file type %s, expecting file\n->9239f7a344422994673cee45eea55c46
+[Warning]PARTICLE SYSTEM: Unable to load manifest file %s\n->d2d3de504978c86d4fe8c86b8ecdbd96
+[Warning]CParticleMgr::LevelInit:  Manifest %s with bogus file type %s, expecting file\n->2bc73e3903090a6c6a6e116f314a4d93
+[Warning]Attempting to create unknown particle system %s \n->d287a8a75c5c5fe07fb5cdd1a8567840
+[Warning]Model %s doesnt have attachment %s to attach particle system %s to.\n->76dd0b3231f7d89a9b459dc8282381dc
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]Attempt to set particle collection %s to invalid orientation matrix\n->f7f570b39f277605867cdc2003c4e3c3
+[Warning]PhysicsSimulate: %s bad movetype %d->783cc55ca419f23dfd410938a83d7a7e
+[Warning]CompareGMODTable: invalue is null?\n->f8a196aff5435e0b332495114696775b
+[Warning]CopyGMODTable: invalue is null?\n->3357d70a19cb97919f76dc4f4eb45b7f
+[Warning]Bad field type\n->3f870dfa78bfc9d41b6d64022dc29050
+[Warning]%s %s has a base specified as %s, but there is no matching entry in propdata.txt.\n->3024a0216afd48277e0018eef7cbb6a5
+[Warning]Materials using the pupil proxy must have a field called $lighting which has a value of 0.5!\n->e8b415e45accb3065606207a04a60e44
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]WARNING! Field %s is using the wrong FIELD_ type!\nFix this or youll see a crash.\n->c9fc09ab661831f4fd63daed3eda3131
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]CSaveRestoreBuffer::TokenHash__ is COMPLETELY FULL!->ec92c19dec0caa4630e3917f9a045e94
+[Warning]Attempted to restore FIELD_EMBEDDEDBYREF %s but there is no destination memory\n->70e06051bcb6131562bca88e0ba6c1c2
+[Warning]Bad field type\n->3f870dfa78bfc9d41b6d64022dc29050
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Bad field type\n->3f870dfa78bfc9d41b6d64022dc29050
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]Restore underflow!\n->e62fd4359ffdf7347e0c1220bfbab005
+[Warning]WARNING! Field %s is using the wrong FIELD_ type!\nFix this or youll see a crash.\n->c9fc09ab661831f4fd63daed3eda3131
+[Warning]WARNING! Field %s is using the wrong FIELD_ type!\nFix this or youll see a crash.\n->c9fc09ab661831f4fd63daed3eda3131
+[Warning]Bad field type\n->3f870dfa78bfc9d41b6d64022dc29050
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Invalid function pointer in entity!\n->9a1339367896696042ba2d4d7e6cdf48
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Bad field type\n->3f870dfa78bfc9d41b6d64022dc29050
+[Warning]CSave::WriteHeader__ size parameter exceeds short!\n->f7df94de44d4bdf8f28cd6c2d975b264
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]CSave::WriteHeader__ size parameter exceeds short!\n->f7df94de44d4bdf8f28cd6c2d975b264
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]Save/Restore overflow!\n->a46710c8af6d53fb917fddef75d64564
+[Warning]%s->1c481aa99d081c32182011a758f73d33
+[Warning]Could not find screen space effect %s\n->2ae7af3b556a4c0d7797fa48ec9cb820
+Found: CScreenSpaceEffectManager::GetScreenSpaceEffect at 0x2cd57660
+[Warning]Unable to load sprite material %s!\n->73a3e24b2a7008e22711bb162c301ba2
+[Warning]Invalid index passed to CStudioHdr_%s_::GroupStudioHdr__: %d, but max is %d\n->1f223306db84ec38af65c654a2623cf9
+[Warning]Call to NULL CStudioHdr::GroupStudioHdr__\n->1abbf953cc332332ec349059d5ae855f
+[Warning]Invalid index passed to CStudioHdr_%s_::GroupStudioHdr__: %d, but max is %d\n->1f223306db84ec38af65c654a2623cf9
+[Warning]AddMultiDamage:  g_MultiDamage.GetDamageForce__ == vec3_origin\n->be62bca7261d05d55afb1ff7be8e7736
+[Warning]AddMultiDamage:  g_MultiDamage.GetDamagePosition__ == vec3_origin\n->e0e0f0f2062afcf5f9687c7f1fa5bedc
+[Warning]Couldnt scan four color values from %s\n->cae3826c60a4afa48c9bea11db94344d
+[Warning]Skipping color %s\n->4ce10a6b840eefd3a510237c93e4c111
+[Warning]Unable to play video: %s\n->0b3304e7ead2691702e6468ee4f201bd
+[Warning]Failed to save screenshot to %s  file already exists or path is invalid.\n->ff2b6b7daba8385536edeafcc4579fda
+[Warning]%s %f %f %f;->d06515d72e01baa6a6576ac042f7b312
+[Warning]%s %f %f %f\n->35ce2495bb3c2196c60290dbcbdf5f95
+[Warning]spec_goto %.1f %.1f %.1f %.1f %.1f\n->2322e038ac1ebb457bbf9a68907cdf21
+[Warning][UHOH!] Invalid HitboxSet %i of %i on model %s.\n->a321b77d884ec1de1775e408f86b9e33
+[Warning]r_screenoverlay: %s\n->1238f07d34446cf753b517578c3330bc
+[Warning]r_screenoverlay: %s\n->1238f07d34446cf753b517578c3330bc
+[Warning]refract: %s reflect: %s\n->c97ec38efd940754023c2115f3c4e623
+[Warning]Water Overlay %s is Error!\n->33ac5090ae05c6c766a5576b08765c1c
+[Warning]r_cheapwaterend: %f\n->fe1c56380bd93488292e28bb786ffa8b
+[Warning]r_cheapwaterstart: %f\n->75122ae693b3570fb7f47ae632e46f1d
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]ERROR: Shotgun Reload called incorrectly!\n->e29e35ddbe760c1ef9807f81c136efc7
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]GetColorForSurface: Missing model?! Index is %i, model is %s\n->61768945e8e1267aec7740c533a2604d
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]Couldnt get IClientEntity for %i\n->af4931d7ec7dedecf54a05a4d3a7fece
+[Warning]No model %d!\n->d24bd3f03076f54271875e31c04bee20
+[Warning]No temp ent.\n->104a86898048b0fc939da9bb7d833e1d
+[Warning]Bad client in AttachTentToPlayer__!\n->04b56198eba54cd0298043a3993ba1b0
+[Warning]ClientProjectile: No model %d!\n->c23015f0b3a07feed62adb9be1a2aa15
+[Warning]Bad client in KillAttachedTents__!\n->84a0600eb5c575612851c97c53d0bb65
+[Warning]No model %d!\n->d24bd3f03076f54271875e31c04bee20
+[Warning]No model %d!\n->d24bd3f03076f54271875e31c04bee20
+[Warning]No model %d!\n->d24bd3f03076f54271875e31c04bee20
+[Warning][UHOH!] Invalid HitboxSet %i of %i on model %s.\n->a321b77d884ec1de1775e408f86b9e33
+[Warning]Called Release__ on CBoneList not allocated via Alloc__ method\n->2c672462a513d92c696b6b64b0a4c093
+[Warning]Failed to CreateQueryUserUGCRequest for subscription list\n->1c270b32f4efb6596601ba22d1282150
+[Warning]Failed to SendQueryUGCRequest for subscription list\n->747f222668faaed19d325110a881acc8
+[Warning]Error! Cannot retrieve CSteamAPIContext. Make sure your Steam is up to date.\n->7d7038a6aa1ea640d2a81782bbc925fd
+[Warning]Error! Cannot retrieve SteamUGC. Make sure your Steam is up to date.\n->1fc50a9d3639eaf23b30f48e949777fc
+[Warning]GetQueryUGCResult failed! _%i_\n->a8365421c7c0766eaa791a8f42514a11
+[Warning]Error getting subcriptions list! Error: %s _%i_\n->331eed8061bce276003ebe6f41057c6c
+[Warning]light has _fifty_percent_distance of %f but no zero_percent_distance\n->6e9063f2afa577915bba2ade9a1af57c
+[Warning]cant solve quadratic for light %f %f\n->b71dd69cb5ed467370cc5bc5b6659178
+[Warning]Attempted to create unknown particle system type %s\n->87367a503abed79ea6114bccd28b0eb3
+[Warning]Attempted to create unknown particle system id %s\n->4731da6c7f5f04d7fd96b5646e98fb39
+[Warning]Particlelib: Missing precache for particle system type %s!\n->66b709bf5e5dfeb441481f123f406c90
+[Warning]Attempted to create unknown particle system type %s!\n->00e25643e6f38be70020a55f18014d63
+[Warning]Attemped to precache unknown particle system %s!\n->ebf94d2a952a6c7593400bd89c6d340e
+[Warning]Unable to read particle definition %s! UtlBuffer is the wrong type!\n->0818ebde90f58f74fc15edad8ef065c0
+[Warning]Particles: Missing %s\n->eb4e5d0548a4cae20187df3fdf593348
+[Warning]sequence number %d too high in sheet file!!!\n->4cc74cba34f4640689ed8fe2be1bd369
+[Warning]C_OP_RenderSprites::RenderUnsorted: Attempting to use an unimplemented sprite renderer for system %s!\n->cb27d4fbb99d1b3d7277207e6db05b78
+[Warning]ConVarRef %s doesnt point to an existing ConVar\n->dd4340ad13662b8049fac42770f341b5
+Found: ConVarRef::Init at 0x2cf2e470
+[Warning]ConVarRef %s doesnt point to an existing ConVar\n->dd4340ad13662b8049fac42770f341b5
+[Warning]KeyValues Error: %s in file %s\n->adb81f85b5a0574a83439a546b705aec
+[Warning]_*%s*_,->9060103154bbeaf18f73fb4c92907947
+[Warning]\n->1d78758685e5e2f4efeeb490f8521abd
+[Warning]KeyValues Error: %s in file %s\n->adb81f85b5a0574a83439a546b705aec
+[Warning]_*%s*_,->9060103154bbeaf18f73fb4c92907947
+[Warning]KeyValues Error: %s in file %s\n->adb81f85b5a0574a83439a546b705aec
+[Warning]_*%s*_,->9060103154bbeaf18f73fb4c92907947
+[Warning]\n->1d78758685e5e2f4efeeb490f8521abd
+[Warning]KeyValues Error: %s in file %s\n->adb81f85b5a0574a83439a546b705aec
+[Warning]%s,->f05581d4b40ca5b9f5a29b535db47e89
+[Warning]_*%s*_,->9060103154bbeaf18f73fb4c92907947
+[Warning]\n->1d78758685e5e2f4efeeb490f8521abd
+[Warning]Bad format string in CLocalizeStringTable::ConstructString\n->a1034b2bdeb458006e9a5424c7ec4538
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]WARNING: Command too long... ignoring!\n%s\n->46da04f4a9b5534449da221bc10066be
+[Warning]CUtlMultiList overflow! _exhausted memory allocator_\n->43fe5df66d8f5339e40722002b034ce5
+[Warning]CUtlMultiList overflow! _exhausted index range_\n->007d9230f793e9ad61bb6253bb7cc880
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]Data manager used memory incorrect\n->c289f07c360bf49adae7c1947b32a75b
+[Warning]Cant add Keybindings Context for unnamed panels\n->d12587aa64c9d1587c1d5fc3754078be
+[Warning]vgui: Adding child in layout!\n->45138325a8407927d10fc4160770f948
+[Warning]Couldnt find script file %s\n->e393b9056490a85aa317329d72052296
+[Warning]Couldnt parse script sequence %s: expected <anim command, found %s\n->a2594d4ddafb276971647d4ab340fb86
+[Warning]Couldnt parse script sequence %s: expected {, found %s\n->adc90d335b53f529380caa76eaaf3817
+[Warning]Couldnt parse script file: expected <event name, found nothing\n->d264fd4bf934bd62d9ca6f1d36123384
+[Warning]Couldnt parse script file: expected event, found %s\n->4dcc359daa8bb00aaeb95c2df8413f21
+[Warning]vgui_controls is missing a required interface!\n->1e3e97cb7d9c1bba82d6770bbdf205ea
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]Failed to open spawn icon _Error Uncompressing_\n->43c2e1b72715f0b4f755bf9ad0b04cc8
+[Warning]Error loading TGA! _Data was NULL_\n->8b3100e244a7d38a6ab6b9788bdb6ecc
+[Warning]Error loading TGA %s! _LoadRGBA8888 failed_\n->1fd19030c1df1ef9bea25beb44178203
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]CUtlLinkedList overflow! _exhausted memory allocator_\n->0f98143afcc902c5ea64635d33b37570
+[Warning]CUtlLinkedList overflow! _exhausted index range_ _%i_\n->3dfa3e2df5ce26352b5279e1cf155809
+[Warning]Height and width must be equal for cubemaps!\n->fe85f48a7587f253d7e7140e6315b669
+[Warning]Depth must be 1 for cubemaps!\n->1d2ab949b9ed47da80610f600f302824
+[Warning]Image dimensions must be multiple of 4!\n->01b78c7f9a9bdc9448d56394978e79dc
+[Warning]Warning! Encountered old format VTF file; please rebuild it!\n->c3f0452f4b83d4c685cc949e8dc6e3a1
+[Warning]*** Unable to serialize... have no image data!\n->c728992094506377c09ef75a2d876571
+[Warning]*** Encountered VTF file with an invalid minor version!\n->304604f39c6285cabc03d8950ec2cce6
+[Warning]*** Encountered VTF file with an invalid full header!\n->5b9e8da6b342a75905c184f38be2fba4
+[Warning]*** Encountered VTF file with an invalid full header!\n->5b9e8da6b342a75905c184f38be2fba4
+[Warning]*** Encountered VTF invalid texture size!\n->009b79414b78eda37be832f5706204e5
+[Warning]Reading externally referenced elements is not supported!\n->562094d0dcd20b7a2275f9909f6cf64d
+[Warning]reading file %s of legacy format %s  dmxconvert this file to a newer format!\n->74ece819379b4a4318993998d380d947
+[Warning]Reading externally referenced elements is not supported!\n->562094d0dcd20b7a2275f9909f6cf64d
+[Warning]DMX error: tried to request out of bounds attribute type! %i, of %i max\n->54bcd9faa6ad024843e73fe32fe65043
+[Warning]Duplicate attribute name %s encountered!\n->ce9eaca5f8bc413e9c1867e6870036d8
+[Warning]CDmxElement::UnpackIntoStructure: Mismatched attribute type in attribute %s!\n->f5a1a3503db92fe10315e912675af663
+[Warning]ERROR Memory corruption: CDmxElement::UnpackIntoStructure string buffer overrun!\n->222b59916e61e5b81fff1eb22e7f7987
+[Warning]ERROR Memory corruption: CDmxElement::UnpackIntoStructure float buffer overrun!\n->c44115af4271e6cad5a0c524f2615823
+[Warning]ERROR Memory corruption: CDmxElement::UnpackIntoStructure memcpy buffer overrun!\n->8b508f40c35f0ab8953e18ec8f5ae675
+[Warning]%s_%d_ : %s\n->d742236469588b1c4b7956d63cb2c9a5
+[Warning]_*%s*_,->9060103154bbeaf18f73fb4c92907947
+[Warning]\n->1d78758685e5e2f4efeeb490f8521abd
+[DevMsg]error in transition graph: %s to %s\n->58337b868f6e48aa8d0afdfd2f901778
+[DevMsg]%s->1c481aa99d081c32182011a758f73d33
+[DevMsg]_%d_: Cycle latch used to correct %.2f in to %.2f instead of %.2f.\n->345bea2e11d9835c882620115d142f2d
+Found: C_BaseAnimating::FrameAdvance at 0x2cc40740
+[DevMsg]CMaterialFloatLerpProxy::OnBind %s %s=%f %d\n->c7a8ff12cc6798f764c7eae4b548d81a
+[DevMsg]Draw Proxy: qh:%d org:<%d,%d,%d _frame:%d_\n->eb14121a9bcd445bd8eafe67d26a83ac
+[DevMsg]Pixels visible: %d _qh:%d_ Pixels possible: %d _qh:%d_ _frame:%d_\n->0d7f68b70444784f73a2f3e851c82835
+[DevMsg]Pixels visible: %d _qh:%d_ _frame:%d_\n->339634e728f10526d911eb3978162e58
+[DevMsg]Soundscape: %s\n->fd227590aeb5e712b0a5d93c047020d8
+[DevMsg]Ambient %s:Unknown command %s\n->781a664eab05e6d6048ab6ee9a75adde
+[DevMsg]Random Sound %s:Unknown command %s\n->d332596701c4627d6392d467a640acb2
+[DevMsg]soundlevel not supported on subsoundscapes\n->02ecd45efad9259149b4ee3a3cc611b7
+[DevMsg]Playsoundscape %s:Unknown command %s\n->d259536dd0bd165bb583b8374b1e7a1d
+[DevMsg]Trying to play unknown soundscape %s\n->d33c4487a4ffebd96c0d716b40d4b0a8
+[DevMsg]Error: Bad soundscape!\n->d368ae234635d7a895edfa5f4d2454af
+[DevMsg]Soundscape %s:Unknown command %s\n->9d346cc83516d55385a9750f0720a771
+[DevMsg]Error: Bad soundscape!\n->d368ae234635d7a895edfa5f4d2454af
+[DevMsg]Soundscape: %s\n->fd227590aeb5e712b0a5d93c047020d8
+[DevMsg]Unhandled GameEvent in ClientModeShared::FireGameEvent  %s\n->9fef5b1477aa2cfbf927bd39b9ab9295
+Found: ClientModeShared::FireGameEvent at 0x2cca5720
+[DevMsg]CDummyMaterialProxy::~CDummyMaterialProxy__\n->8acef4b7316f73ae13c8ba971f1fa099
+[DevMsg]CDummyMaterialProxy::Init_ material = %s _\n->048ed99efab01dc6c7f0982638af438f
+[DevMsg]CDummyMaterialProxy::OnBind_ %p _\n->a8873de02499f37e79e13406806e5c12
+[DevMsg]CDummyMaterialProxy::CDummyMaterialProxy__\n->2dc4ad161df7b857070fbf8980140beb
+[DevMsg]PM  Got a NaN velocity %s\n->934a7581afb948cd1d9d1055cbb829fa
+Found: CGameMovement::CheckVelocity at 0x2ccd7a50
+[DevMsg]PM  Got a NaN origin on %s\n->068731d27da2a9cc02a08d00f53c3f74
+[DevMsg]Bogus pmove player movetype %i on _%i_ 0=cl 1=sv\n->e0528c7561f9302583b2b1fc2cc95112
+Found: CGameMovement::PlayerMove at 0x2ccdc130
+[DevMsg]Three keys down for a button %c %c %c!\n->3783968182f4c7ac77a6644403fcf28d
+Found: KeyDown at 0x2cd0b1f0
+[DevMsg]Bogus constraint on ragdoll %s\n->1657a40a772db46aac5498e19df9a521
+[DevMsg]TICK:%5d:Ragdoll separation count: %d\n->2e9b9554239fb3b7939c139aee8f2fc8
+[DevMsg]Beam spline with %i points received\n->6aacafc51717cd18af5accb350180a3d
+[DevMsg]Beam spline with %i points invoked\n->2e3e959fe0f6abebf30fe23462bff2af
+[DevMsg]Decal: entity = %i->06c1fe0edeca98c58dbbcd25cadb14a7
+[DevMsg]Decal: entity = %i->06c1fe0edeca98c58dbbcd25cadb14a7
+[DevMsg]KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.\n->babb9347a539b282eb170537fe3e38c0
+Found: KeyValues::RecursiveSaveToFile at 0x2cf316c0
+[DevMsg]KeyValues::SaveToFile: couldn\t open file %s in path %s.\n->51d0e8348ea93eb211ae8cf2f1a92780
+Found: KeyValues::SaveToFile at 0x2cf31aa0
+[DevWarning]AutoIKRelease _%s_ got a NULL pBone %d\n->9b5ac4db3781e6ca6eb9af5b1fe0e370
+Found: CIKContext::AutoIKRelease at 0x2cc2eee0
+[DevWarning]AutoIKRelease _%s_ got an out of range bone %d _%d_\n->dd014ff6777bde08a2fdf1f55515a391
+[DevWarning]AutoIKRelease _%s_ got a NULL pchain %d\n->38e59f96a4e6b03fdbefb238a017d362
+[DevWarning]C_BaseAnimating::SequenceDuration_ %d _ out of range\n->a09a4220b2688367ff2d1fd7db2a6d36
+[DevWarning]C_BaseAnimating::SequenceDuration_ %d _ out of range\n->a09a4220b2688367ff2d1fd7db2a6d36
+[DevWarning]SetupBones: SetupBones_AttachmentHelper failed.\n->6ff670db375104ec2b83d61b7acfdd5a
+[DevWarning]SUB_Remove called on entity with health  0\n->a8234bba9f90a57cb24b3a40ccef6904
+[DevWarning]No room for effect %s\n->844f3afa84690baeb208c600d9066577
+[DevWarning]Could not find Hud Element: %s\n->8040920d81d9f6ca950339d0c97202d8
+Found: CHud::FindElement at 0x2cce7880
+[DevWarning]AutoGameSystem already added to game system list!!!\n->5078fb1e591d24870b46722c311b3a97
+[DevWarning]AutoGameSystem already added to game system list!!!\n->5078fb1e591d24870b46722c311b3a97
+[DevWarning]CViewRenderBeams::DrawBeam:  Unknown beam type %i\n->cf0087221b4bccc36b2ddb4aa0dc88ba
+Found: CViewRenderBeams::DrawBeam at 0x2cd74580
+[DevWarning]Max Active Snow Volume Count!\n->35769559c911cb5f3f0ff159193a4f0c
+[DevWarning]No Sprite %d!\n->60875f677004baa96c06e850ff99f7ab
+[DevWarning]Cant create temporary entity with NULL model!\n->233d3ffe817669fc1555dc0082ba760e
+[DevWarning]Overflow %d temporary ents!\n->a94eb386da203e9ea410c464404a1ec6
+[DevWarning]temporary ent model invalid\n->5aa0a34752d11f4830a015230f68d22d
+[DevWarning]Couldnt alloc a high priority TENT _max %i_!\n->9b9dd24c6afe5704c0c6d906e501e4ff
+[DevWarning]Warning : Particle system _%s_ using unassigned ControlPoint %d!\n->ccf4b305e66ac7f9d52dceecec491d94

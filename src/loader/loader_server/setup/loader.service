@@ -1,0 +1,18 @@
+[Unit]
+Description=RIJIN Loader service
+Documentation=
+After=network.target
+
+[Service]
+Environment=
+Type=simple
+User=loader
+CPUAccounting=yes
+MemoryAccounting=yes
+WorkingDirectory=/home/loader/
+ExecStart=node src/main.js
+Restart=always
+RuntimeMaxSec=43200
+
+[Install]
+WantedBy=multi-user.target

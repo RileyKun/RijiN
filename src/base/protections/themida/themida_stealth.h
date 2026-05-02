@@ -1,0 +1,31 @@
+#pragma once
+
+#include "sdk/VirtualizerSDK.h"
+
+#if defined(ANTI_REVERSE_VM_ENGINE)
+
+  // This is known to take way too long.
+  #define VM_SLOW_START() VIRTUALIZER_SHARK_WHITE_START
+  #define VM_SLOW_STOP()  VIRTUALIZER_SHARK_WHITE_END
+
+  #define VM_FAST_START() VIRTUALIZER_DOLPHIN_WHITE_START
+  #define VM_FAST_STOP()  VIRTUALIZER_DOLPHIN_WHITE_END
+
+  #define VM_ULTRA_FAST_START() VIRTUALIZER_TIGER_WHITE_START
+  #define VM_ULTRA_FAST_STOP() VIRTUALIZER_TIGER_WHITE_END
+
+  #define VM_MUTATE_START() VIRTUALIZER_MUTATE_ONLY_START
+  #define VM_MUTATE_STOP()  VIRTUALIZER_MUTATE_ONLY_END
+#else
+  #define VM_SLOW_START()
+  #define VM_SLOW_STOP()
+
+  #define VM_FAST_START()
+  #define VM_FAST_STOP()
+
+  #define VM_ULTRA_FAST_START()
+  #define VM_ULTRA_FAST_STOP()
+
+  #define VM_MUTATE_START()
+  #define VM_MUTATE_STOP()
+#endif

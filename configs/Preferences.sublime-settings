@@ -1,0 +1,25 @@
+{
+    "hot_exit": false,
+    "remember_open_files": false,
+    "remember_full_screen": true,
+    "save_on_focus_lost": true,
+    "scroll_past_end": false,
+    "detect_indentation": true,
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true,
+    "highlight_line": true,
+    "expand_tabs_on_save": true,
+    "trim_trailing_white_space_on_save": true,
+    "caret_style": "smooth",
+    "file_tab_style": "angled",
+    "theme": "Adaptive.sublime-theme",
+    "dark_theme": "Adaptive.sublime-theme",
+    "light_theme": "Default Dark.sublime-theme",
+    "highlight_modified_tabs": true,
+    "auto_complete_use_history": true,
+    "index_exclude_gitignore": true,
+    "ignored_packages":
+    [
+        "Vintage",
+    ],
+}

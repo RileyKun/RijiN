@@ -1,0 +1,443 @@
+{
+  "write_user_cmd_delta_to_buffer": {
+    "index": 23
+  },
+  "get_entity":{
+    "index": 3
+  },
+  "get_entity_handle":{
+    "index": 4
+  },
+  "get_highest_index":{
+    "index": 6
+  },
+  "set_mouse_input_enabled":{
+    "index": 32
+  },
+  "panel_get_name":{
+    "index": 36
+  },
+  "force_material_override":{
+    "index": 1
+  },
+  "get_model_name":{
+    "index": 3
+  },
+  "get_studio_hdr":{
+    "index": 28
+  },
+  "get_world_to_screen_matrix_for_view":{
+    "index": 78
+  },
+  "set_blend":{
+    "index": 4
+  },
+  "get_blend":{
+    "index": 5
+  },
+  "set_colour_modulation":{
+    "index": 6
+  },
+  "get_colour_modulation":{
+    "index": 7
+  },
+  "vpp_get_name":{
+    "index": 1
+  },
+  "vpp_set_data":{
+    "index": 2
+  },
+  "vpp_reset":{
+    "index": 3
+  },
+  "vpp_update":{
+    "index":  4
+  },
+  "vpp_needs_update":{
+    "index": 5
+  },
+  "vpp_has_input_elements":{
+    "index": 6
+  },
+  "vpp_show_panel":{
+    "index": 7
+  },
+  "vp_show_background":{
+    "index": 3
+  },
+  "vp_find_panel_by_name":{
+    "index": 4
+  },
+  "draw_beam":{
+    "index": 4
+  },
+  "create_beam_points":{
+    "index": 10
+  },
+  "create_env":{
+    "index": 5
+  },
+  "destroy_env":{
+    "index": 6
+  },
+  "bbox_to_collide":{
+    "index": 29
+  },
+  "is_collision_enabled":{
+    "index": 6
+  },
+  "enable_collisions":{
+    "index": 12
+  },
+  "enable_gravity":{
+    "index": 13
+  },
+  "enable_drag":{
+    "index": 14
+  },
+  "wake":{
+    "index": 24
+  },
+  "sleep":{
+    "index": 25
+  },
+  "set_drag_coefficient":{
+    "index": 36
+  },
+  "vphy_set_position":{
+    "index": 45
+  },
+  "vphy_set_velocity":{
+    "index": 49
+  },
+  "vphy_get_position":{
+    "index": 47
+  },
+  "vphy_get_velocity":{
+    "index": 51
+  },
+  "vphy_set_gravity":{
+    "index": 3
+  },
+  "set_air_density":{
+    "index": 5
+  },
+  "create_physics_object":{
+    "index": 7
+  },
+  "set_performance_settings":{
+    "index": 59
+  },
+  "vphy_simulate":{
+    "index": 34
+  },
+  "is_logged_in":{
+    "index": 1
+  },
+  "get_steam_id":{
+    "index": 2
+  },
+  "get_persona_name":{
+    "index": 0
+  },
+  "get_persona_name_other":{
+    "index": 7
+  },
+  "game_overlay_to_web_page":{
+    "index": 30
+  },
+  "texture_get_actual_width":{
+    "index": 3
+  },
+  "texture_get_actual_height":{
+    "index": 4
+  },
+  "texture_increment_reference_count":{
+    "index": 10
+  },
+  "rc_release":{
+    "index": 1
+  },
+  "rc_depth_range":{
+    "index": 11
+  },
+  "set_stencil_enable":{
+    "index": 117
+  },
+  "set_stencil_fail_operation":{
+    "index": 118
+  },
+  "set_stencil_zfail_operation":{
+    "index": 119
+  },
+  "set_stencil_pass_operation":{
+    "index": 120
+  },
+  "set_stencil_compare_function":{
+    "index": 121
+  },
+  "set_stencil_reference_value":{
+    "index": 122
+  },
+  "set_stencil_test_mask":{
+    "index": 123
+  },
+  "set_stencil_write_mask":{
+    "index": 124
+  },
+  "push_render_target_and_viewport":{
+    "index": 108
+  },
+  "pop_render_target_and_viewport":{
+    "index": 109
+  },
+  "set_render_target":{
+    "index": 6
+  },
+  "rc_viewport":{
+    "index": 38
+  },
+  "clear_colour_4ub":{
+    "index": 73
+  },
+  "clear_buffers":{
+    "index": 12
+  },
+  "draw_screen_space_rectangle":{
+    "index": 103
+  },
+  "mv_set_float_value":{
+    "index": 3
+  },
+  "mv_set_int_value":{
+    "index": 4
+  },
+  "mv_set_string_value":{
+    "index": 5
+  },
+  "mv_get_string_value":{
+    "index": 6
+  },
+  "mv_set_2d":{
+    "index": 10
+  },
+  "mv_set_3d":{
+    "index": 11
+  },
+  "mv_set_4d":{
+    "index": 12
+  },
+  "mat_get_name":{
+    "index": 0
+  },
+  "get_texture_group_name":{
+    "index": 1
+  },
+  "mat_find_var":{
+    "index": 11
+  },
+  "mat_increment_reference_count":{
+    "index": 12
+  },
+  "mat_alpha_modulate":{
+    "index": 27
+  },
+  "mat_colour_modulate":{
+    "index": 28
+  },
+  "set_material_var_flag":{
+    "index": 29
+  },
+  "get_material_var_flag":{
+    "index": 30
+  },
+  "is_error_material":{
+    "index": 42
+  },
+  "get_alpha_modulate":{
+    "index": 44
+  },
+  "create_material":{
+    "index": 70
+  },
+  "find_material":{
+    "index": 71
+  },
+  "find_texture":{
+    "index": 79
+  },
+  "create_named_render_target_texture_ex":{
+    "index": 85
+  },
+  "get_render_context":{
+    "index": 98
+  },
+  "get_back_buffer_format":{
+    "index": 32
+  },
+  "ge_get_name":{
+    "index": 1
+  },
+  "ge_get_bool":{
+    "index": 5
+  },
+  "ge_get_int":{
+    "index": 6
+  },
+  "ge_get_float":{
+    "index": 7 
+  },
+  "ge_get_string":{
+    "index": 8
+  },
+  "ge_set_bool":{
+    "index": 9
+  },
+  "ge_set_int":{
+    "index": 10
+  },
+  "ge_set_float":{
+    "index": 11
+  },
+  "ge_set_string":{
+    "index": 12
+  },
+  "net_msg_get_group":{
+    "index": 8
+  },
+  "net_msg_get_name":{
+    "index": 9
+  },
+  "run_command":{
+    "index": 17
+  },
+  "add_listener":{
+    "index": 3
+  },
+  "remove_listener":{
+    "index": 5
+  },
+  "find_listener":{
+    "index": 4
+  },
+  "create_event":{
+    "index": 6
+  },
+  "fire_event_client_side":{
+    "index": 8
+  },
+  "get_screen_size":{
+    "index": 5
+  },
+  "server_cmd":{
+    "index": 6
+  },
+  "get_player_info":{
+    "index": 8
+  },
+  "get_player_for_user_id":{
+    "index": 9
+  },
+  "get_local_player":{
+    "index": 12
+  },
+  "get_view_angles":{
+    "index": 19
+  },
+  "set_view_angles":{
+    "index": 20
+  },
+  "is_taking_screenshot":{
+    "index": 85
+  },
+  "engine_fire_events":{
+    "index": 56
+  },
+  "client_cmd":{
+    "index": 106
+  },
+  "send_keyvalue":{
+    "index": 127
+  },
+  "get_net_channel":{
+    "index": 72
+  },
+  "is_playing_demo":{
+    "index": 76
+  },
+  "is_recording_demo":{
+    "index": 77
+  },
+  "get_level_name":{
+    "index": 51
+  },
+  "get_latency":{
+    "index": 9
+  },
+  "get_avg_latency":{
+    "index": 10
+  },
+  "get_avg_packets":{
+    "index": 14
+  },
+  "get_ip":{
+    "index": 1
+  },
+  "send_datagram":{
+    "index": 47
+  },
+  "get_achievement_mgr":{
+    "index": 114
+  },
+  "is_in_game":{
+    "index": 26
+  },
+  "chat_print":{
+    "index": 19
+  },
+  "sfx_table_get_name":{
+    "index": 0
+  },
+  "achievement_get_id":{
+    "index": 0
+  },
+  "get_achievement_by_index":{
+    "index": 0
+  },
+  "get_achievement_count":{
+    "index": 2
+  },
+  "award_achievement":{
+    "index": 4
+  },
+  "client_renderable_unknown":{
+    "index": 0
+  },
+  "client_unknown_get_base_entity":{
+    "index": 7
+  },
+  "get_commands":{
+    "index": 17
+  },
+  "find_command":{
+    "index": 11
+  },
+  "cvar_find_var":{
+    "index": 13
+  },
+  "cvar_set_value_str":{
+    "index": 10
+  },
+  "cvar_set_value_int":{
+    "index": 12
+  },
+  "engine_ray_trace":{
+    "index": 4
+  },
+  "engine_ray_to_entity":{
+    "index": 2
+  },
+  "has_friend":{
+    "index": 17
+  }
+}

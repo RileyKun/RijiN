@@ -1,0 +1,4 @@
+{
+	"shell_cmd": "node %CODEBASE_MAIN%\\src\\run_compile.js",
+	"working_dir": "$file_path",
+}

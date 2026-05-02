@@ -1,0 +1,104 @@
+#pragma once
+
+enum player_esp_render_type{
+  PLAYER_ESP_RENDER_TYPE_TEXT = 0,
+  PLAYER_ESP_RENDER_TYPE_CHAMS,
+  PLAYER_ESP_RENDER_TYPE_GLOW,
+  PLAYER_ESP_RENDER_TYPE_CHAMS_OVERLAY,
+};
+
+//_FORMAT means it's going to be formatted. So don't touch it in precache.
+enum player_esp_buffer_type{
+  PLAYER_ESP_TEXT_UNKNOWN = 0,
+  HP_FORMAT,
+  IGNORED_TEXT,
+  IGNORE_VACCINATOR_TEXT,
+  FORCE_BAIM_KEY_TEXT,
+  FORCE_BAIM_TEXT,
+  SLOW_DOWN_TEXT,
+  CHARGE_FORMAT,
+  ZOOMED_TEXT,
+  CLOAKED_TEXT,
+  DEADRINGER_DEPLOYED_TEXT,
+  BONK_FORMAT,
+  DISGUISE_TEXT,
+  UBERCHARGE_TEXT,
+  UBERCHARGE_HIDDEN_TEXT,
+  TAUNT_TEXT,
+  CRIT_BOOST_TEXT,
+  DAMAGE_BUFF_TEXT,
+  DEMO_CHARGE_TEXT,
+  CRIT_COLA_TEXT,
+  BURN_TEXT,
+  JARATE_TEXT,
+  BLEED_TEXT,
+  DEFENSE_BUFF_HIGH_TEXT,
+  DEFENSE_BUFF_TEXT,
+  SPEED_HEAL_BUFF_TEXT,
+  MILK_TEXT,
+  QUICK_FIX_UBER_TEXT,
+  FOCUS_BUFF_TEXT,
+  BULLET_RESIST_CHARGE_FORMAT,
+  BLAST_RESIST_CHARGE_FORMAT,
+  FIRE_RESIST_CHARGE_FORMAT,
+  BULLET_RESIST_TEXT,
+  BLAST_RESIST_TEXT,
+  FIRE_RESIST_TEXT,
+  MEDIGUN_DEBUFF_TEXT,
+  HEAL_DEBUFF_TEXT,
+  HEAL_AMOUNT_FORMAT,
+  PLAYER_NAME_FORMAT,
+  PARTY_TEXT,
+  FRIEND_TEXT,
+  BOT_TEXT,
+  CHEATER_TEXT,
+  SUSPICIOUS_TEXT,
+  HIGH_KD_TEXT,
+  HIGH_HEADSHOT_RATIO_TEXT,
+  ABNORMAL_LATENCY_TEXT,
+  DORMANT_TEXT,
+  DUEL_TEXT,
+  PRIORITY_FORMAT,
+  RESOLVER_MP_TEXT,
+  RESOLVER_P_TEXT,
+  RESOLVER_A_MY_TEXT,
+  RESOLVER_MY_TEXT,
+  RESOLVER_AY_TEXT,
+  RESOLVER_Y_TEXT,
+  RESOLVER_TEXT,
+
+  RESOLVER_MANUAL_ARROW_TEXT,
+  AIM_TARGET_CIRCLE_TEXT,
+  AIM_TARGET_LINE_ARROW_TEXT,
+
+  PLAYER_DISTANCE_FORMAT,
+
+  HAS_OBJECTIVE_TEXT,
+
+  RIJIN_STAFF_TEXT,
+  RIJIN_USER_TEXT,
+};
+
+#define PLAYER_ESP_BUF_SIZE 128
+#define PLAYER_ESP_MAX_DIST_CACHE 1024
+class c_player_esp{
+public:
+  void precache();
+  bool should_draw(c_base_player* p);
+  colour get_draw_colour(c_base_player* p, i32 colour_type = PLAYER_ESP_RENDER_TYPE_TEXT);
+  colour get_draw_colour(c_base_entity* entity, i32 colour_type = PLAYER_ESP_RENDER_TYPE_TEXT);
+  colour get_bland_colour(c_base_player* p);
+
+  template<auto c>
+  void add_flags(c_base_player* p, c_esp_data<c>* esp_data);
+  u32 fetch_render_flags(c_player_esp_settings* settings);
+  void run();
+private:
+  wchar_t _str[PLAYER_ESP_BUF_SIZE][128]; // 16.3kb
+  wchar_t _dist[PLAYER_ESP_MAX_DIST_CACHE][10]; // 
+  ALWAYSINLINE wchar_t* get_str(u32 i){
+    return _str[i];
+  }
+};
+
+CLASS_EXTERN(c_player_esp, player_esp);

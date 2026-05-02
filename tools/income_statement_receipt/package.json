@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "receipt": "^1.4.0",
+    "sun-country": "^1.0.5"
+  }
+}

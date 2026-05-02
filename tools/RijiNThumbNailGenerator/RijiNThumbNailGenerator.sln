@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RijiNThumbNailGenerator", "RijiNThumbNailGenerator\RijiNThumbNailGenerator.csproj", "{57819B8B-2517-4B5B-A582-7C0739D99B51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57819B8B-2517-4B5B-A582-7C0739D99B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57819B8B-2517-4B5B-A582-7C0739D99B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57819B8B-2517-4B5B-A582-7C0739D99B51}.Debug|x64.ActiveCfg = Debug|x64
+		{57819B8B-2517-4B5B-A582-7C0739D99B51}.Debug|x64.Build.0 = Debug|x64
+		{57819B8B-2517-4B5B-A582-7C0739D99B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57819B8B-2517-4B5B-A582-7C0739D99B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57819B8B-2517-4B5B-A582-7C0739D99B51}.Release|x64.ActiveCfg = Release|x64
+		{57819B8B-2517-4B5B-A582-7C0739D99B51}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02C5CAED-99EB-44F2-AF89-9E2090689D9A}
+	EndGlobalSection
+EndGlobal

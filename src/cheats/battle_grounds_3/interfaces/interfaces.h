@@ -1,0 +1,15 @@
+#pragma once
+
+#include "interface_client.h"
+#include "interface_trace.h"
+#include "interface_engine.h"
+#include "interface_prediction.h"
+#include "interface_engine_tool.h"
+#include "interface_entity_list.h"
+#include "interface_modelinfo.h"
+#include "interface_cvar.h"
+#include "interface_material_system.h"
+#include "interface_engine_render_view.h"
+#include "interface_engine_model.h"
+#include "interface_panel.h"
+#include "interface_steam_friends.h"

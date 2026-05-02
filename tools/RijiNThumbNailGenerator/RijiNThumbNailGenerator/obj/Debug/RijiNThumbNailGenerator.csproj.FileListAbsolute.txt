@@ -1,0 +1,11 @@
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\bin\Debug\RijiNThumbNailGenerator.exe.config
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\bin\Debug\RijiNThumbNailGenerator.exe
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\bin\Debug\RijiNThumbNailGenerator.pdb
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\obj\Debug\RijiNThumbNailGenerator.csproj.AssemblyReference.cache
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\obj\Debug\RijiNThumbNailGenerator.csproj.SuggestedBindingRedirects.cache
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\obj\Debug\RijiNThumbNailGenerator.MainForm.resources
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\obj\Debug\RijiNThumbNailGenerator.Properties.Resources.resources
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\obj\Debug\RijiNThumbNailGenerator.csproj.GenerateResource.cache
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\obj\Debug\RijiNThumbNailGenerator.csproj.CoreCompileInputs.cache
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\obj\Debug\RijiNThumbNailGenerator.exe
+M:\RIJIN\codebase_main\tools\RijiNThumbNailGenerator\RijiNThumbNailGenerator\obj\Debug\RijiNThumbNailGenerator.pdb

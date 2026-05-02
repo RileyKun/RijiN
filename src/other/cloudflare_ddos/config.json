@@ -1,0 +1,12 @@
+{
+  "name":            "RijiN",
+  "website":         "https://rijin.solutions/forum/",
+  "health_check_ua": "RijiN - 0b0f3742c3b53feb67fe0dbacd08bba6 SITE-CHECK",
+  "zone_id":         "040520c634453e7d66381d9812edcc7b",
+  "discord_webhook": "https://discord.com/api/webhooks/1183482600350818375/VC1g0-xu64m4pNmJEPUJLN00li5OWupnM0EZ6s2AM-Y6wIgqew0soW_mHtmNnjI9qNGc",
+  "webhook_ip":       "5.75.160.80",
+  "webhook_port":     80,
+  "active_during_ddos":[
+    "033bb7e3247a411f973915a346c0518a"
+  ]
+}

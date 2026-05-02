@@ -1,0 +1,21 @@
+{
+  "dev_ip": "0.0.0.0",
+  "staging_ip": "**REDACTED**",
+  "shipping_ip": "**REDACTED**",
+  "dev_port": 43244,
+  "main_port": 80,
+  "sync_server_ip": "**REDACTED**",
+  "sync_server_master_port": 6931,
+  "sync_server_listen_port": 6930,
+
+  "wh_security_url": "**REDACTED**",
+  "wh_sid_query_url": "*REDACTED**",
+  "wh_logins_url": "https://discord.com/api/webhooks/1393440338319773726/",
+  "wh_sid_submit_cheater_url": "https://discord.com/api/webhooks/1395552721947463772/-Jo1Bb7G4xjqQi",
+  "wh_submit_error_code": "https://discord.com/api/webhooks/1398642721651953735/-rBTkl2fKQE4MMNsPzR1FUKw8PaIg_",
+  "wh_product_exceptions": "https://discord.com/api/webhooks/1398644200060485672/-YDiVAXncbHwRp4dvU9eu8AyNOGhe",
+
+  "rlm_api_url": "https://rijin.solutions/dashboard/sdk/api.php",
+  "rlm_api_url_test": "http://localhost/dashboard/sdk/api.php",
+  "rlm_api_key": "*REDACTED**"
+}

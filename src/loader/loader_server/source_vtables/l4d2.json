@@ -1,0 +1,77 @@
+{
+  "write_user_cmd_delta_to_buffer":{
+    "index": 22
+  },
+  "is_taking_screenshot":{
+    "index": 89
+  },
+  "engine_fire_events":{
+    "index": 57
+  },
+  "client_cmd":{
+    "index": 107
+  },
+  "get_net_channel":{
+    "index": 74
+  },
+  "is_playing_demo":{
+    "index": 79
+  },
+  "is_recording_demo":{
+    "index": 80
+  },
+  "get_level_name":{
+    "index": 52
+  },
+  "get_world_to_screen_matrix_for_view":{
+    "index": 79
+  },
+  "set_stencil_state":{
+    "index": 118
+  },
+  "create_named_render_target_texture_ex":{
+    "index": 83
+  },
+  "push_render_target_and_viewport":{
+    "index": 109
+  },
+  "pop_render_target_and_viewport":{
+    "index": 110
+  },
+  "clear_colour_4ub":{
+    "index": 75
+  },
+  "draw_screen_space_rectangle":{
+    "index": 104
+  },
+  "find_texture":{
+    "index": 77
+  },
+  "get_render_context":{
+    "index": 96
+  },
+  "get_studio_hdr":{
+    "index": 30
+  },
+  "run_command": {
+    "index": 18
+  },
+  "engine_ray_trace":{
+    "index": 5
+  },
+  "engine_ray_to_entity":{
+    "index": 3
+  },
+  "cvar_set_value_str":{
+    "index": 12
+  },
+  "cvar_set_value_int":{
+    "index": 14
+  },
+  "net_msg_get_name":{
+    "index": 10
+  },
+  "net_msg_get_group":{
+    "index": 9
+  }
+}

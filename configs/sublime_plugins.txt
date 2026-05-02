@@ -1,0 +1,3 @@
+Color HighLight
+Hex to Int Preview
+SublimeCodeIntel

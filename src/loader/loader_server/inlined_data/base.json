@@ -1,0 +1,93 @@
+[
+  {
+    "name": "get_abs_origin",
+    "value": 9,
+    "file_path": "./inlined_data/base.json",
+    "hash": 3434847727,
+    "padding": []
+  },
+  {
+    "name": "get_abs_angles",
+    "value": 10,
+    "file_path": "./inlined_data/base.json",
+    "hash": 1755132433,
+    "padding": []
+  },
+  {
+    "name": "get_index",
+    "value": 9,
+    "file_path": "./inlined_data/base.json",
+    "hash": 1130692372,
+    "padding": []
+  },
+  {
+    "name": "should_draw",
+    "value": 3,
+    "file_path": "./inlined_data/base.json",
+    "hash": 729178893,
+    "padding": []
+  },
+  {
+    "name": "get_client_class",
+    "value": 2,
+    "file_path": "./inlined_data/base.json",
+    "hash": 2338708304,
+    "padding": []
+  },
+  {
+    "name": "get_model",
+    "value": 9,
+    "file_path": "./inlined_data/base.json",
+    "hash": 1373639941,
+    "padding": []
+  },
+  {
+    "name": "is_dormant",
+    "value": 8,
+    "file_path": "./inlined_data/base.json",
+    "hash": 1701355499,
+    "padding": []
+  },
+  {
+    "name": "draw_model",
+    "value": 10,
+    "file_path": "./inlined_data/base.json",
+    "hash": 2736746513,
+    "padding": []
+  },
+  {
+    "name": "setup_bones",
+    "value": 16,
+    "file_path": "./inlined_data/base.json",
+    "hash": 154709566,
+    "padding": []
+  },
+  {
+    "name": "get_slot",
+    "value": 331,
+    "file_path": "./inlined_data/base.json",
+    "hash": 3274019652,
+    "padding": []
+  },
+  {
+    "name": "get_id",
+    "value": 382,
+    "file_path": "./inlined_data/base.json",
+    "hash": 1418429701,
+    "padding": []
+  },
+  {
+    "name": "get_old_origin",
+    "value": 86,
+    "file_path": "./inlined_data/base.json",
+    "hash": 2768618656,
+    "padding": []
+  },
+  {
+    "name": "move_helper_set_host",
+    "value": 12,
+    "file_path": "./inlined_data/base.json",
+    "hash": 626741993,
+    "padding": []
+  }
+]

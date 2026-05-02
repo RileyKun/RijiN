@@ -1,0 +1,163 @@
+[
+  {
+    "name": "get_abs_origin",
+    "value": 11,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 3434847727,
+    "padding": []
+  },
+  {
+    "name": "get_abs_angles",
+    "value": 12,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 1755132433,
+    "padding": []
+  },
+  {
+    "name": "model_bone_counter",
+    "value": 1704,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 520624094,
+    "padding": []
+  },
+  {
+    "name": "last_bone_setup_time",
+    "value": 2316,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 1302664470,
+    "padding": []
+  },
+  {
+    "name": "surface_friction",
+    "value": 5060,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 823647999,
+    "padding": []
+  },
+  {
+    "name": "move_helper_set_host",
+    "value": 1,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 626741993,
+    "padding": []
+  },
+  {
+    "name": "shoot_pos",
+    "value": 254,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 413046753,
+    "padding": []
+  },
+  {
+    "name": "ent_client_flags",
+    "value": 92,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 2552905764,
+    "padding": []
+  },
+  {
+    "name": "get_client_class",
+    "value": 1,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 2338708304,
+    "padding": []
+  },
+  {
+    "name": "setup_bones",
+    "value": 13,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 154709566,
+    "padding": []
+  },
+  {
+    "name": "rgfl_coordinate_frame",
+    "value": 848,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 2745465717,
+    "padding": []
+  },
+  {
+    "name": "move_type",
+    "value": 324,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 277321977,
+    "padding": []
+  },
+  {
+    "name": "get_model",
+    "value": 8,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 1373639941,
+    "padding": []
+  },
+  {
+    "name": "get_index",
+    "value": 8,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 1130692372,
+    "padding": []
+  },
+  {
+    "name": "draw_model",
+    "value": 9,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 2736746513,
+    "padding": []
+  },
+  {
+    "name": "is_dormant",
+    "value": 7,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 1701355499,
+    "padding": []
+  },
+  {
+    "name": "spread",
+    "value": 3340,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 1229586638,
+    "padding": []
+  },
+  {
+    "name": "client_state_server_tick",
+    "value": 196,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 449867442,
+    "padding": []
+  },
+  {
+    "name": "client_state_client_tick",
+    "value": 200,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 1368966526,
+    "padding": []
+  },
+  {
+    "name": "client_state_signon_state",
+    "value": 208,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 2391781175,
+    "padding": []
+  },
+  {
+    "name": "client_state_last_command_ack",
+    "value": 19020,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 1648077713,
+    "padding": []
+  },
+  {
+    "name": "client_state_last_outgoing_command",
+    "value": 19012,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 3608816306,
+    "padding": []
+  },
+  {
+    "name": "client_state_choked_commands",
+    "value": 19016,
+    "file_path": "./inlined_data/l4d2_base.json",
+    "hash": 2661663916,
+    "padding": []
+  }
+]

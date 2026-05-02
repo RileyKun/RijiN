@@ -1,0 +1,332 @@
+#pragma once
+
+class c_procedure_garrysmod64 : public c_procedure_base{
+public:
+
+  bool setup() override{
+    DBG("[+] setup\n");
+    if(global->dxgi_offset_data == nullptr)
+      return false;
+
+    return true;
+  }
+
+  bool handle_globaldata(){
+    DBG("[!] fetching globaldata\n");
+
+    set_module(HASH("client.dll"));
+    {
+      float cur_time = 0.f;
+
+      u64 global_data_ptr = (u64)find_signature(HASH("client.dll"), HASH(".text"), SIG("\x48\x8B\x05\x00\x00\x00\x00\x44\x8B\x40\x00\x44\x39\x81\x00\x00\x00\x00\x74\x00\x48\x8B\x01"), true);
+
+      while(true){
+        u64 global_data = global_data_ptr;
+
+        if(!inject->read_memory(global_data, &global_data, XOR32(sizeof(u64)))){
+          SHOW_ERROR(ERR_GLOBALDATA_FETCH_FAILED, true);
+          return false;
+        }
+
+        if(!inject->read_memory(global_data + XOR32(0xC), &cur_time, XOR32(sizeof(float)))){
+          SHOW_ERROR(ERR_GLOBALDATA_FETCH_FAILED, true);
+          return false;
+        }
+
+        DBG("[!] globaldata: 0x%p - %f\n", global_data, cur_time);
+        if(cur_time >= 1.0f){
+          DBG("[+] globaldata fetched! (%f)\n", cur_time);
+          add_ptr(HASH("globaldata"), global_data);
+          break;
+        }
+        else
+          I(Sleep)(XOR32(100));
+      }
+    }
+
+    set_module(HASH("client.dll"));
+    {
+      bypass_pkg_errors = true;
+      u64 should_draw_local_player_movrel_bytes = (u64)find_signature(HASH("client.dll"), HASH(".text"), SIG("\x48\x8B\x0D\x00\x00\x00\x00\x48\x85\xC9\x74\x00\x48\x8D\x51"), false);
+      bypass_pkg_errors = false;
+      if(should_draw_local_player_movrel_bytes != 0){
+        u32 old_protect;
+        I(VirtualProtectEx)(inject->process, should_draw_local_player_movrel_bytes, 7, XOR32(PAGE_EXECUTE_READWRITE), &old_protect);
+
+        u8 mov_rcx_0[] = {0x48, 0xc7, 0xc1, 0x00, 0x00, 0x00, 0x00};
+        inject->write_memory(should_draw_local_player_movrel_bytes, &mov_rcx_0, sizeof(mov_rcx_0));
+        I(VirtualProtectEx)(inject->process, should_draw_local_player_movrel_bytes, 7, old_protect, &old_protect);
+  
+        DBG("PATCHED: %p\n", should_draw_local_player_movrel_bytes);
+        //system("pause");
+      }
+    }
+
+    return true;
+  }
+
+  bool write_signatures() override{
+    set_section(HASH(".text"));
+
+    // Easy way to ensure the loading screen is passed
+    set_module(HASH("serverbrowser.dll"));
+
+    set_module(HASH("client.dll"));
+    {
+      // Find CHLClient::CreateMove and sig the instruction below push rdi
+      // We use an exception handler do dump RSP to get stack position of bSendPacket
+      add_signature(HASH("chlclient_createmove_push_rdi"), SIG("\x48\x83\xEC\x00\x8B\xF2\x0F\x29\x74\x24"));
+
+      add_signature(HASH("keyvalues_init"), SIG("\x40\x53\x48\x83\xEC\x00\x48\x8B\xD9\xFF\x15\x00\x00\x00\x00\x8B\xD3"), false);
+      add_signature(HASH("keyvalues_setname"), SIG("\x48\x89\x5C\x24\x00\x57\x48\x83\xEC\x00\x81\x21"), false);
+      add_signature(HASH("keyvalues_setint"), SIG("\x40\x53\x48\x83\xEC\x00\x41\x8B\xD8\x41\xB0"), false);
+      add_signature(HASH("keyvalues_setfloat"), SIG("\x48\x83\xEC\x00\x0F\x29\x74\x24\x00\x41\xB0"), false);
+  
+      // Get the return address of the call do_post_screen_space_effects in RenderView.
+      // The name is misleading.
+      add_signature(HASH("vgui_drawhud_retaddr"), SIG("\x48\x8B\x0D\x00\x00\x00\x00\x48\x85\xC9\x74\x00\xBA\x00\x00\x00\x00\xE8\x00\x00\x00\x00\x84\xC0\x74\x00\x48\x8B\x0D\x00\x00\x00\x00\x33\xD2\xE8\x00\x00\x00\x00\x49\x8B\x07"), false);
+
+      add_signature(HASH("set_abs_origin"), SIG("\x48\x89\x5C\x24\x00\x57\x48\x83\xEC\x00\x48\x8B\xFA\x48\x8B\xD9\xE8\x00\x00\x00\x00\xF3\x0F\x10\x83"), false);
+      add_signature(HASH("set_abs_angles"), SIG("\x40\x53\x57\x48\x81\xEC\x00\x00\x00\x00\x48\x8B\x05\x00\x00\x00\x00\x48\x33\xC4\x48\x89\x84\x24\x00\x00\x00\x00\x48\x8B\xFA"), false);
+  
+      // #hl2_AmmoFull
+      add_signature(HASH("localization_addr"), SIG("\x48\x8B\x0D\x00\x00\x00\x00\x48\x8D\x15\x00\x00\x00\x00\x48\x8B\x01\xFF\x50\x00\x48\x85\xC0\x74\x00\x48\x8D\x8B"), true);    
+    
+      add_signature(HASH("prediction_random_seed"), SIG("\x89\x05\x00\x00\x00\x00\xC3\xCC\xCC\xCC\xCC\xCC\xCC\x8B\x02"), true);
+
+      // Found in CInput::Createmove
+      add_signature(HASH("md5_pseudorandom"), SIG("\x89\x4C\x24\x00\x55\x48\x8B\xEC\x48\x81\xEC"), false);
+    
+      //
+      add_signature(HASH("engine_client_cmd_retaddr"), SIG("\x48\x8B\xBC\x24\x00\x00\x00\x00\x48\x8B\xB4\x24\x00\x00\x00\x00\x4C\x8B\xBC\x24\x00\x00\x00\x00\x48\x8B\x9C\x24"), false);
+
+      // CViewRender::RenderView call in CViewRender::Render()
+      add_signature(HASH("cviewrender_renderview_ret_addr1"), SIG("\xE8\x00\x00\x00\x00\x84\xC0\x75\x00\xE8\x00\x00\x00\x00\x80\x3D"), false);
+
+      // Return address inside CGarrysMod::add_video_frame_to_texture of the copy_render_target_to_texture
+      // Can be found using the string "pp/videoscale"
+      add_signature(HASH("copy_render_target_to_texture_retaddr1"), SIG("\x48\x8B\x07\x45\x33\xC0\x48\x8B\xD6\x48\x8B\xCF\xFF\x90\x00\x00\x00\x00\x48\x8B\x07\x48\x8B\xCF\xFF\x50\x00\x48\x8B\x0D\x00\x00\x00\x00\x8B\x15"), false);
+    }
+
+    set_module(HASH("studiorender.dll"));
+    {
+      add_signature(HASH("gmod_model_material_override"), SIG("\x48\x8B\x05\x00\x00\x00\x00\x48\x85\xC0\x48\x0F\x45\xD0"), true);
+    }
+
+    set_module(HASH("engine.dll"));
+    {
+      // search for "demorestart" or "Recording to %s...\n", look for demorestart call and check ecx register which contains &cl pointer
+      add_signature(HASH("client_state"), SIG("\x48\x8D\x0D\x00\x00\x00\x00\xE8\x00\x00\x00\x00\x48\x8D\x54\x24\x00\x48\x8D\x0D\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\x48\x8B\xB4\x24"), true);
+
+      add_signature(HASH("keyvalues_setstring"), SIG("\x48\x89\x5C\x24\x00\x56\x48\x83\xEC\x00\x49\x8B\xD8\x41\xB0\x00\xE8\x00\x00\x00\x00\x48\x8B\xF0\x48\x85\xC0\x74\x00\x48\x8B\x48\x00\x48\x89\x7C\x24\x00\xE8\x00\x00\x00\x00\x48\x8B\x4E\x00\xE8\x00\x00\x00\x00\x48\x85\xDB\x48\xC7\x46\x00\x00\x00\x00\x00\x48\x8D\x3D\x00\x00\x00\x00\x48\x0F\x45\xFB\x48\x8B\xCF\xE8\x00\x00\x00\x00\x8D\x58"), false);
+  
+       // Search for "Software\\Valve\\Steam" and when inside function it is there.
+      add_signature(HASH("steam3client_addr"), SIG("\xE8\x00\x00\x00\x00\x48\x83\x78\x00\x00\x74\x00\xE8\x00\x00\x00\x00\x48\x83\x78\x00\x00\x74\x00\xE8\x00\x00\x00\x00\x48\x83\x78\x00\x00\x74\x00\xE8\x00\x00\x00\x00\x48\x8D\x54\x24\x00\x48\x8B\x48\x00\x48\x8B\x01\xFF\x50\x00\x48\x85\xFF"), true);
+
+      /*
+        else if ( movie_name_10382B80 )
+          ConMsg("Already recording movie!\n");
+      */
+      add_signature(HASH("movie_name_addr"), SIG("\x48\x8D\x15\x00\x00\x00\x00\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\xFF\x05"), true);
+    }
+
+    return true;
+  }
+
+  bool write_pointers() override{
+    DBG("[+] write_pointers\n");
+    if(!handle_globaldata())
+      return false;
+
+    return true;
+  }
+
+  bool write_hooks() override{
+    set_section(HASH(".text"));
+
+    set_module(HASH("d3d9.dll"));
+    {
+      add_hook(HASH("d3d9_hook"), global->dxgi_offset_data->d3d9_present);
+    }
+
+    set_module(HASH("ntdll.dll"));
+    {
+      u64 module = inject->get_module_address(HASH("ntdll.dll"));
+      u64 export_ptr = inject->get_export(module, HASH("KiUserExceptionDispatcher"));
+
+      void* _asm = malloc(XOR32(256));
+      inject->read_memory(export_ptr, _asm, XOR32(256));
+
+      for(u64 i = _asm;; i < XOR32(256)){
+        hde64s h;
+        hde64_disasm(i, &h);
+
+        if(h.opcode == XOR32(0xE8) && (h.flags & HDE64_F_IMM32)){
+          add_hook(HASH("rtl_dispatch_exception_hook"), (export_ptr + (i - (u64)_asm) + (i32)h.imm.imm32 + h.len) - module);
+          break;
+        }
+
+        DBG("%i\n", h.len);
+
+        i += h.len;
+      }
+
+      free(_asm);
+    }
+
+    set_module(HASH("client.dll"));
+    {
+      // look for "WARNING! User command buffer overflow(%i %i), last cmd was %i bits long\n" and xref 2 up in vtable list
+      add_hook(HASH("create_move_hook"), SIG("\x48\x85\xD2\x74\x00\x48\x81\xC1\x00\x00\x00\x00\x48\x3B\xCA"), false);
+
+      add_hook(HASH("override_view_hook"), SIG("\x40\x55\x53\x57\x48\x8D\x6C\x24\x00\x48\x81\xEC\x00\x00\x00\x00\x48\x8B\xDA"), false);
+      
+      add_hook(HASH("run_command_hook"), SIG("\x48\x89\x5C\x24\x00\x48\x89\x6C\x24\x00\x48\x89\x74\x24\x00\x48\x89\x7C\x24\x00\x41\x54\x41\x56\x41\x57\x48\x83\xEC\x00\x0F\x29\x74\x24"), false);
+
+      // search for "CGMOD_Player::PostThink" and sig function
+      add_hook(HASH("post_think_hook"), SIG("\x48\x89\x5C\x24\x00\x57\x48\x83\xEC\x00\x48\x8B\xD9\x48\x8B\x0D\x00\x00\x00\x00\x8B\xB9"), false);
+
+     
+      // Search for "C_BaseAnimating::SetupBones"
+      add_hook(HASH("base_animating_setupbones_hook"), SIG("\x40\x55\x53\x48\x8D\xAC\x24"), false);
+
+      // Search for this cvar and look below
+      //  && *(mat_motion_blur_enabled + 48)
+      //  && (*(*g_pMaterialSystemHardwareConfig + 128))(g_pMaterialSystemHardwareConfig) >= 90 )
+      //  v24 = sub_101C61D0();
+      // (*(*v24 + 156))(v24, a2); <-----
+      add_hook(HASH("do_post_screen_space_effects_hook"), SIG("\xB0\x00\xC3\xCC\xCC\xCC\xCC\xCC\xCC\xCC\xCC\xCC\xCC\xCC\xCC\xCC\x48\x8D\x0D"), false);
+      add_hook(HASH("set_dormant_hook"), SIG("\x48\x89\x5C\x24\x00\x57\x48\x83\xEC\x00\x0F\xB6\xFA\x88\x91"), false);
+
+      // Search for string "CLuaGamemode::CallWithArgs"
+      add_hook(HASH("lua_gamemode_callwithargs_hook"), SIG("\x40\x53\x48\x83\xEC\x00\x48\x89\x6C\x24\x00\x48\x8B\xD9\x48\x8B\x0D\x00\x00\x00\x00\x8B\xEA\x48\x89\x74\x24\x00\x8B\xB1\x00\x00\x00\x00\x85\xF6\x74\x00\xC7\x44\x24\x00\x00\x00\x00\x00\x4C\x8D\x0D\x00\x00\x00\x00\x45\x33\xC0\xC6\x44\x24\x00\x00\x48\x8D\x15\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\x84\xC0\x75\x00\x48\x8B\x0D\x00\x00\x00\x00\x8B\xD5\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\x48\x8B\xD0\x48\x8D\x0D\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\x48\x8B\x03\x48\x8B\xCB\x48\x89\x7C\x24\x00\xFF\x90\x00\x00\x00\x00\x84\xC0\x74\x00\x48\x8B\x43\x00\x48\x8D\x4B\x00\xFF\x90\x00\x00\x00\x00\x84\xC0\x74\x00\x48\x8B\x43\x00\x48\x8D\x4B\x00\xFF\x90\x00\x00\x00\x00\x48\x8B\x0D\x00\x00\x00\x00\x8B\xD5\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\x48\x8B\x03\x48\x8B\xCB\xFF\x90\x00\x00\x00\x00\xB3"), false);
+      add_hook(HASH("lua_gamemode_callwithargs_str_hook"), SIG("\x40\x53\x48\x83\xEC\x00\x48\x89\x6C\x24\x00\x48\x8B\xD9\x48\x8B\x0D\x00\x00\x00\x00\x48\x8B\xEA\x48\x89\x74\x24\x00\x8B\xB1\x00\x00\x00\x00\x85\xF6\x74\x00\xC7\x44\x24\x00\x00\x00\x00\x00\x4C\x8D\x0D\x00\x00\x00\x00\x45\x33\xC0\xC6\x44\x24\x00\x00\x48\x8D\x15\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\x84\xC0\x75\x00\x48\x8B\xD5\x48\x8D\x0D\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\x48\x8B\x03\x48\x8B\xCB\x48\x89\x7C\x24\x00\xFF\x90\x00\x00\x00\x00\x84\xC0\x74\x00\x48\x8B\x43\x00\x48\x8D\x4B\x00\xFF\x90\x00\x00\x00\x00\x84\xC0\x74\x00\x48\x8B\x43\x00\x48\x8D\x4B\x00\xFF\x90\x00\x00\x00\x00\x48\x8B\x0D\x00\x00\x00\x00\x45\x33\xC0\x48\x8B\xD5\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\x48\x8B\x03\x48\x8B\xCB\xFF\x90\x00\x00\x00\x00\xB3"), false);
+
+      // Search for string "CLuaGamemode::Call"
+      add_hook(HASH("lua_gamemode_call_hook"), SIG("\x40\x53\x48\x83\xEC\x00\x48\x89\x6C\x24\x00\x48\x8B\xD9\x48\x8B\x0D\x00\x00\x00\x00\x8B\xEA\x48\x89\x74\x24\x00\x8B\xB1\x00\x00\x00\x00\x85\xF6\x74\x00\xC7\x44\x24\x00\x00\x00\x00\x00\x4C\x8D\x0D\x00\x00\x00\x00\x45\x33\xC0\xC6\x44\x24\x00\x00\x48\x8D\x15\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\x84\xC0\x75\x00\x48\x8B\x0D\x00\x00\x00\x00\x8B\xD5\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\x48\x8B\xD0\x48\x8D\x0D\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\x48\x8B\x03\x48\x8B\xCB\x48\x89\x7C\x24\x00\xFF\x90\x00\x00\x00\x00\x84\xC0\x74\x00\x48\x8B\x43\x00\x48\x8D\x4B\x00\xFF\x90\x00\x00\x00\x00\x84\xC0\x74\x00\x48\x8B\x43\x00\x48\x8D\x4B\x00\xFF\x90\x00\x00\x00\x00\x48\x8B\x0D\x00\x00\x00\x00\x8B\xD5\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\x48\x8B\x03\x48\x8B\xCB\xFF\x90\x00\x00\x00\x00\x48\x8B\x0D"), false);
+      add_hook(HASH("lua_gamemode_call_str_hook"), SIG("\x40\x53\x48\x83\xEC\x00\x48\x89\x6C\x24\x00\x48\x8B\xD9\x48\x8B\x0D\x00\x00\x00\x00\x48\x8B\xEA\x48\x89\x74\x24\x00\x8B\xB1\x00\x00\x00\x00\x85\xF6\x74\x00\xC7\x44\x24\x00\x00\x00\x00\x00\x4C\x8D\x0D\x00\x00\x00\x00\x45\x33\xC0\xC6\x44\x24\x00\x00\x48\x8D\x15\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\x84\xC0\x75\x00\x48\x8B\xD5\x48\x8D\x0D\x00\x00\x00\x00\xFF\x15\x00\x00\x00\x00\x48\x8B\x03\x48\x8B\xCB\x48\x89\x7C\x24\x00\xFF\x90\x00\x00\x00\x00\x84\xC0\x74\x00\x48\x8B\x43\x00\x48\x8D\x4B\x00\xFF\x90\x00\x00\x00\x00\x84\xC0\x74\x00\x48\x8B\x43\x00\x48\x8D\x4B\x00\xFF\x90\x00\x00\x00\x00\x48\x8B\x0D\x00\x00\x00\x00\x45\x33\xC0\x48\x8B\xD5\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\x48\x8B\x03\x48\x8B\xCB\xFF\x90\x00\x00\x00\x00\x48\x8B\x0D"), false);
+
+      // Search for string "CLuaGamemode::CallFinish"
+      add_hook(HASH("lua_gamemode_callfinish_hook"), SIG("\x40\x53\x48\x83\xEC\x00\x48\x8B\x0D\x00\x00\x00\x00\x8D\x5A"), false);
+
+      /*
+        Can be found by using these strings:
+          sub_2BCCB920(v4 + 159);
+          if ( sub_2BE6F660(32) )
+            nClearFlags = COERCE_FLOAT(sub_2BE6F600("UnlitGeneric"));
+          else
+            nClearFlags = 0.0;
+          sub_2BE71BF0("$basetexture", "_rt_FullScreen");
+          sub_2BE71B90("$nocull", 1);
+          sub_2BE71B90("$nofog", 1);
+          sub_2BE71B90("$ignorez", 1);
+          sub_2BE79E40("FreezeFrame_FullScreen", "Other textures", LODWORD(nClearFlags));
+          (*(**(v9 + 240) + 148))(*(v9 + 240));
+          sub_2BE79E90("debug/debugtranslucentsinglecolor", "Other textures", 1);
+      */
+      add_hook(HASH("crenderview_renderview_hook"), SIG("\x4C\x8B\xDC\x55\x53\x56\x41\x57\x49\x8D\xAB"), false);
+
+    
+      // Literally look for render.Capture in client.dll
+      add_hook(HASH("render_capture_hook"), SIG("\x40\x55\x53\x48\x8D\x6C\x24\x00\x48\x81\xEC\x00\x00\x00\x00\x48\x8B\x05\x00\x00\x00\x00\x48\x33\xC4\x48\x89\x45\x00\x48\x8B\x0D"), false);
+
+      // Called inside C_BasePlayer::DrawModel or C_BaseCombatWeapon::DrawModel
+      // !! RELOCATIONS AT THE START!!!!
+      // original \x48\x83\xEC\x00\x48\x8B\x0D\x00\x00\x00\x00\x48\x85\xC9\x74\x00\x48\x8D\x51
+      add_hook(HASH("should_draw_localplayer_hook"), SIG("\x48\x83\xEC\x00\x48\xC7\xC1\x00\x00\x00\x00\x48\x85\xC9\x74\x00\x48\x8D\x51"), false);
+      
+      // Use "ERROR: Undefined ammo type!\n" to find.
+      add_hook(HASH("fire_bullets_hook"), SIG("\x40\x55\x53\x56\x57\x41\x54\x48\x8D\xAC\x24\x00\x00\x00\x00\x48\x81\xEC\x00\x00\x00\x00\x44\x0F\x29\x8C\x24"), false);
+
+      // mat_motion_blur_enabled
+      add_hook(HASH("do_image_space_motion_blur_hook"), SIG("\x40\x55\x53\x56\x41\x54\x41\x55\x48\x8D\xAC\x24\x00\x00\x00\x00\x48\x81\xEC\x00\x00\x00\x00\x48\x8B\x05\x00\x00\x00\x00\x48\x33\xC4\x48\x89\x45"), false);
+    
+      //Use the "CClientEntityList::`vftable'" to find the functions
+      //First function is OnAddEntity and the second function is OnRemoveEntit
+      add_hook(HASH("client_entity_list_on_add_entity_hook"), SIG("\x48\x89\x5C\x24\x00\x56\x57\x41\x56\x48\x83\xEC\x00\x41\x8B\x00"), false);
+      add_hook(HASH("client_entity_list_on_remove_entity_hook"), SIG("\x48\x89\x5C\x24\x00\x48\x89\x74\x24\x00\x48\x89\x7C\x24\x00\x41\x56\x48\x83\xEC\x00\x41\x8B\x00"), false);
+      
+      // search for "%8.4f : %30s : %5.3f : %4.2f  +\n" and sig the function is it in.
+      add_hook(HASH("maintain_sequence_transition_hook"), SIG("\x4C\x89\x4C\x24\x00\x56\x41\x57\x48\x81\xEC"), false);
+      
+      // found in this function https://github.com/ValveSoftware/source-sdk-2013/blob/master/mp/src/game/client/c_baseanimating.cpp#L1814
+      add_hook(HASH("check_for_sequence_change_hook"), SIG("\x48\x85\xD2\x0F\x84\x00\x00\x00\x00\x48\x89\x6C\x24\x00\x48\x89\x74\x24\x00\x48\x89\x7C\x24"), false);
+    
+      // search for "Writing demo message %i bytes at file pos %i\n" in client.dll, look for GetClientCmdInfo and then follow with debugger until you get to g_pClientSidePrediction->GetLocalViewAngles
+      add_hook(HASH("get_local_view_angles_hook"), SIG("\x40\x53\x48\x83\xEC\x00\x48\x8B\xDA\xE8\x00\x00\x00\x00\x48\x8B\xC8\x48\x85\xC0\x75\x00\x0F\x57\xC0\x48\x89\x03\xF3\x0F\x11\x43\x00\x48\x83\xC4\x00\x5B\xC3\x8B\x80"), false);
+      
+      // Look for "SetupPoseParameters" its inside ::Update
+      add_hook(HASH("cmutliplayeranimstate_update_hook"), SIG("\x48\x89\x5C\x24\x00\x57\x48\x83\xEC\x00\x48\x8B\xB9\x00\x00\x00\x00\x48\x8B\xD9\x0F\x29\x74\x24"), false);
+      
+      // You can use CMultiPlayerAnimState::VerifyAnimLayerInSlot to find this function.
+      // Use Player %d doesn't have gesture slot %d any more.\n or "Gesture slot %d pointing to wrong address %p. Updating to new address %p.\n"
+      add_hook(HASH("cmutliplayeranimstate_restartgesture_hook"), SIG("\x48\x89\x5C\x24\x00\x55\x57\x41\x54\x48\x83\xEC"), false);
+      
+      // see something like this can find it by using "Tried to use a NULL IVideoWriter!" but be careful every IVideoWriter Function has this.
+      /*
+        (*(*lua_interface + 352i64))(lua_interface, 2i64);
+        if ( (*(*lua_interface + 200i64))(lua_interface, 3i64) )
+        {
+          (*(*CGarrysMod + 0x28i64))(CGarrysMod, *(video_writer + 8), *(video_writer + 12));
+          (*(*video_writer + 8i64))(video_writer, 0i64, 0i64);
+          (*(*CGarrysMod + 48i64))(CGarrysMod, *(video_writer + 8), *(video_writer + 12));
+          return 0i64;
+        }
+      */
+      add_hook(HASH("ivideowriter_addframe_hook"), SIG("\x40\x53\x48\x83\xEC\x00\x48\x8B\xD1\x48\x8B\x49\x00\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\xFF\x05\x00\x00\x00\x00\x48\x8D\x0D\x00\x00\x00\x00\xBA\x00\x00\x00\x00\xE8\x00\x00\x00\x00\x48\x8B\xD8\x48\x85\xC0\x75\x00\x48\x8B\x0D\x00\x00\x00\x00\x48\x8D\x15\x00\x00\x00\x00\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\x33\xC0\x48\x83\xC4\x00\x5B\xC3\xE8\x00\x00\x00\x00\x48\x8B\xC8"), false);
+      
+      // Called inside IVideoWriter::Record
+      add_hook(HASH("record_game_hook"), SIG("\x40\x55\x53\x56\x57\x41\x56\x48\x8D\x6C\x24\x00\x48\x81\xEC\x00\x00\x00\x00\x48\x8B\x05\x00\x00\x00\x00\x48\x33\xC4\x48\x89\x45\x00\x48\x8B\x0D"), false);
+    }
+    
+    set_module(HASH("vgui2.dll"));
+    {
+      add_hook(HASH("paint_traverse_hook"), SIG("\x48\x89\x5C\x24\x00\x57\x48\x83\xEC\x00\x48\x8B\x01\x41\x0F\xB6\xD9"), false);
+    }
+
+    set_module(HASH("engine.dll"));
+    {
+      // search for "CEngineVGui::Paint" and sig the function it is in
+      add_hook(HASH("engine_paint_hook"), SIG("\x48\x83\xEC\x00\x48\x89\x6C\x24\x00\x48\x8B\xE9"), false);
+
+      add_hook(HASH("frame_stage_notify_hook"), SIG("\x8B\xD1\x48\x8B\x0D\x00\x00\x00\x00\x48\x85\xC9\x74\x00\x48\x8B\x01\x48\xFF\xA0"), false);
+
+      // Search for "NetMsg" and sig the function it is in.
+      add_hook(HASH("cnetchan_sendnetmsg_hook"), SIG("\x48\x89\x5C\x24\x00\x48\x89\x6C\x24\x00\x48\x89\x7C\x24\x00\x41\x56\x48\x83\xEC\x00\x48\x8B\xD9\x45\x0F\xB6\xF1"), false);
+
+      add_hook(HASH("draw_model_execute_hook"), SIG("\x40\x55\x53\x56\x41\x54\x41\x55\x41\x56\x41\x57\x48\x8D\xAC\x24\x00\x00\x00\x00\x48\x81\xEC\x00\x00\x00\x00\x48\x8B\x05\x00\x00\x00\x00\x48\x33\xC4\x48\x89\x85\x00\x00\x00\x00\x45\x8B\x70"), false);
+      add_hook(HASH("fire_event_hook"), SIG("\x48\x89\x74\x24\x00\x41\x56\x48\x83\xEC\x00\x48\x8B\xF2\x4C\x8B\xF1\x48\x85\xD2\x75"), false);
+
+      // It was hooked and then never really used.
+      //add_hook(HASH("engine_client_cmd_hook"), SIG("\x55\x8B\xEC\x80\x3D\x00\x00\x00\x00\x00\x74\x00\x6A"), false);
+    }
+
+    set_module(HASH("studiorender.dll"));
+    {
+      // Go in engine.dll and search for the string "CModelRender::ForcedMaterialOverride" this function calls studio render one.
+      // Use a debugger to break point in it.
+      add_hook(HASH("studio_render_forced_material_override_hook"), SIG("\x45\x84\xC0\x75\x00\x48\x8B\x05"), false);
+    }
+  
+    set_module(HASH("materialsystem.dll"));
+    {
+      // I placed an int3 above a call in the cheat and then stepped into them.
+      add_hook(HASH("set_render_target_hook"), SIG("\x48\x8B\x01\x4C\x8B\xC2"), false);
+      add_hook(HASH("copy_render_target_to_texture_ex_hook"), SIG("\x48\x85\xD2\x74\x00\x48\x89\x5C\x24\x00\x48\x89\x74\x24"), false);
+      add_hook(HASH("copy_render_target_to_texture_hook"), SIG("\x4D\x85\xC0\x74\x00\x48\x89\x5C\x24"), false);
+      add_hook(HASH("get_render_target_hook"), SIG("\x83\x79\x00\x00\x7E\x00\x48\x63\x41"), false);
+      add_hook(HASH("push_render_target_and_viewport_p5_hook"), SIG("\x48\x89\x5C\x24\x00\x57\x48\x83\xEC\x00\x8B\x84\x24"), false);
+      add_hook(HASH("push_render_target_and_viewport_p1_hook"), SIG("\x48\x89\x5C\x24\x00\x57\x48\x83\xEC\x00\x0F\x57\xC0\x48\x89\x54\x24"), false);
+    }
+
+    set_module(HASH("shaderapidx9.dll"));
+    { 
+      // IVideoWriter_AddFrame -> file system video func which calls this function. Gottn wi
+      // However in shaderapidx9, this function calls a function with this string in it "Can't blit from full-sized offscreen buffer!\"
+      add_hook(HASH("shaderapi_read_pixels_hook"), SIG("\x4C\x8B\xDC\x49\x89\x5B\x00\x57\x48\x83\xEC\x00\x8B\x84\x24"), false);
+    }
+
+
+    return true;
+  }
+};
