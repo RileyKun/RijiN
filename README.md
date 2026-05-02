@@ -2,7 +2,7 @@
 
 Years of work, effort and time I put into this, please enjoy one of if not the most premium p2c source code codebases to date.
 
-Generated over $300,000 in revenue, 80,000+ customers.
+Generated over $500,000 in revenue, 80,000+ customers.
 
 Never wanted to release this, but sadly time has come, I havent used my computer in 12 months, If you're still playing TF2,CSGO, go outside
 
