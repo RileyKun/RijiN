@@ -1,4 +1,16 @@
-# codebase_main
+# RijiN/codebase_main
+
+Years of work, effort and time I put into this, please enjoy one of if not the most premium p2c source code codebases to date.
+
+Generated over $300,000 in revenue, 80,000+ customers.
+
+Never wanted to release this, but sadly time has come, I havent used my computer in 12 months, If you're still playing TF2,CSGO, go outside
+
+# Credits
+1. Senator - Loader, codebase, framework, cheats, reverse engineering, DRM Designs, UI, security design, project design, fixes, the lsit goes on (easily 90% of the work)
+2. Styles - Convincing me to level up and work harder, changed me as a person, big respect bro
+3. Nitro (interwebz) - Oldest cheat scene friend I have to date, helped on some very complex reversal issues
+4. DurRud - Helped work on tf2
 
 ## 1. Requirements
 1. [NodeJS](https://nodejs.org/en/download/)
