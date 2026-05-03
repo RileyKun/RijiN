@@ -20,7 +20,7 @@ I'd like to thank everyone who supported RijiN, and all the pay to cheat develop
 # and thats all she wrote
 
 # Credits
-1. Senator - Loader, codebase, framework, cheats, reverse engineering, DRM Designs, UI, security design, project design, fixes, the lsit goes on (easily 90% of the work)
+1. Senator - Creator of RijiN, designed the codebase, fundemental design of the loader(s), DRM (including gen), UI, cheats, security, auth, website, dashboard, etc
 2. Styles - Convincing me to level up and work harder, changed me as a person, big respect bro
 3. Nitro (interwebz) - Oldest cheat scene friend I have to date, helped on some very complex reversal issues
 4. DurRud - Provided extensive help and creative work on tf2 and several parts of the codebase, RijiN would not be what it is today without Rud.
