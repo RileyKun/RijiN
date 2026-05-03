@@ -4,8 +4,9 @@ This project contains the entire codebase_main source code for RijiN, minus some
 
 * THIS PROJECT IS NOT GAY, IT DOES NOT USE MODERN C++ (STL/CRT) *
 * THIS MEANS THIS PROJECT DOES NOT COMPILE TO A TPYICAL PE DLL, BUT INSTEAD A BLOCK OF CODE *
+* READ src/loader/loader_server/src/gen.js AS IT IS VERY IMPORTANT TO UNDERSTAND HOW EVERYTHING WORKS *
 
-project compiles its "binaries" into direct code, using the PE format for convenience but with no direct link to a typical DLL in the basic sense, with no CRT/STL, Which means the project relies entirely on own impkementation for everything, this was done because DRM was a concern, and also from a pure control perspective, in relation to anti cheats and dynamic envrionments, we are albe to compile code that can be directly injected into any part of the operating system, kernel etc. as a module (see loader_server/src/gen.js)
+project compiles its "binaries" into direct code, using the PE format for convenience but with no direct link to a typical DLL in the basic sense, with no CRT/STL, Which means the project relies entirely on own implementation for everything, this was done because DRM was a concern, and also from a pure control perspective, in relation to anti cheats and dynamic envrionments, we are able to compile code that can be directly injected into any part of the operating system, kernel etc. as a module (see loader_server/src/gen.js)
 
 * IMPORTS ARE AUTOMATICALLY RESOLVED BY THE GENERATOR (SEE loader_server/src/gen.js) HOWEVER SOMETIMES A DIRECT REFERENCE TO THE IMPORT MAY BE REQUIRED FOR THE LOADER TO AUTOMAGICALLY LINK *
 
