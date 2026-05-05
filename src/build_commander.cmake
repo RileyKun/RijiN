@@ -41,45 +41,6 @@ else()
   message(FATAL_ERROR "Environment variable \"CODEBASE_MAIN\" must be set, example: F:\\RIJIN\\codebase_main")
 endif()
 
-# Check for git, if it exists then get some info
-find_package (Git)
-if (GIT_FOUND)
-  exec_program(
-    ${GIT_EXECUTABLE}
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ARGS "rev-parse --abbrev-ref HEAD"
-    OUTPUT_VARIABLE BUILD_GIT_BRANCH_NAME
-  )
-
-  # any mode but shipping is considered development mode
-  if(NOT BUILD_GIT_BRANCH_NAME MATCHES shipping)
-    set(BUILD_FLAG_DEV_MODE ON)
-  endif()
-
-  # any mode but shipping is considered development mode
-  if(BUILD_GIT_BRANCH_NAME MATCHES staging)
-    set(BUILD_FLAG_DEV_MODE OFF)
-    set(BUILD_FLAG_STAGING_MODE ON)
-    message(STATUS "[!] BUILD_FLAG_STAGING_MODE")
-  endif()
-
-  if(BUILD_FLAG_SHIPPING_TEST MATCHES ON)
-    set(BUILD_FLAG_DEV_MODE OFF)
-  endif()
-
-  if(BUILD_FLAG_DEV_MODE MATCHES ON)
-    set(BUILD_FLAG_USE_SIMD sse2)
-  endif()
-
-  if(BUILD_FLAG_STAGING_MODE MATCHES ON)
-    set(BUILD_FLAG_USE_SIMD sse2)
-  endif()
-else()
-  message(FATAL_ERROR "Git is not installed, you must have git installed.")
-endif()
-
-message(STATUS "${BUILD_GIT_BRANCH_NAME}")
-
 # IMPORTANT!
 # CMake includes a bunch of libraries by default
 # Which causes a issue where libgcc is not included and other random libraries are
@@ -346,10 +307,6 @@ if(BUILD_FLAG_PRESET_MODE MATCHES GEN_SECURE_DLL_NOCRT) # Build with preset chea
   # -fno-strength-reduce (without)
   # x * 2;  // Might be optimized to x << 1;
   # x / 4;  // Might be optimized to x >> 2;
-
-
-  # Linker settings
-  add_linker_flags("-nostdlib") # Explicitly always no STL/CRT
 
   if(BUILD_FLAG_DEV_MODE MATCHES ON)
     add_linker_flags("-Wl,--export-all-symbols,--kill-at,--entry=0,--image-base=0x0") # Export ALL symbols, less strict mangles, no entry point, image base 0

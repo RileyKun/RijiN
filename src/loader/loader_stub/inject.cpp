@@ -807,7 +807,7 @@ bool c_inject::dump_dxgi_offsets(bool x86){
   DBG("[!] d3d9_resetex: %p\n", global->dxgi_offset_data->d3d9_reset);
   DBG("[+] dumped dxgi offsets\n");
 
-  return global->dxgi_offset_data->d3d9_present != 0 && global->dxgi_offset_data->d3d11_present != 0;
+  return global->dxgi_offset_data->d3d9_present != 0 && global->dxgi_offset_data->d3d11_present != 0 && global->dxgi_offset_data->d3d9_reset != 0;
 }
 
 bool c_inject::check_game_compatibility(bool x86){

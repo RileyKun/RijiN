@@ -16,7 +16,7 @@ bool setup(void* device){
   // Setup trampoline addresses
   {
     global->d3d9_hook_trp                                           = GET_PKG("d3d9_hook");
-    //global->d3d9_reset_trp                                          = GET_PKG("d3d9_reset");
+    global->d3d9_reset_trp                                          = GET_PKG("d3d9_reset_hook");
     global->create_move_hook_trp                                    = GET_PKG("create_move_hook");
     global->override_view_hook_trp                                  = GET_PKG("override_view_hook");
     global->engine_paint_hook_trp                                   = GET_PKG("engine_paint_hook");

@@ -477,6 +477,7 @@ public:
     set_module(HASH("d3d9.dll"));
     {
       add_hook(HASH("d3d9_hook"), global->dxgi_offset_data->d3d9_present);
+      add_hook(HASH("d3d9_reset_hook"), global->dxgi_offset_data->d3d9_reset);
     }
 
     set_module(HASH("client.dll"));

@@ -417,19 +417,19 @@
     "index": 7
   },
   "get_commands":{
-    "index": 17
+    "index": 16
   },
   "find_command":{
-    "index": 11
-  },
-  "cvar_find_var":{
-    "index": 13
-  },
-  "cvar_set_value_str":{
     "index": 10
   },
-  "cvar_set_value_int":{
+  "cvar_find_var":{
     "index": 12
+  },
+  "cvar_set_value_str":{
+    "index": 9
+  },
+  "cvar_set_value_int":{
+    "index": 11
   },
   "engine_ray_trace":{
     "index": 4
