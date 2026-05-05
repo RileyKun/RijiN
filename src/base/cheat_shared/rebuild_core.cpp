@@ -181,10 +181,6 @@ ALWAYSINLINE wchar_t* wcscpy(wchar_t* dest, const wchar_t* src){
   return memcpy(dest, src, (wcslen(src) * 2) + 1);
 }
 
-i32 atexit( atexit_func func ) {
-  return 0;
-}
-
 ALWAYSINLINE void* memchr(const void *s, int c, size_t n){
   size_t    i;
   char    *string;
