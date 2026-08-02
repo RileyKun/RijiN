@@ -6,7 +6,7 @@ The full source code for RijiN. Originally posted by senator. This fork modifies
 1. Download [NodeJS](https://nodejs.org/en/download/) and [MSYS2](http://repo.msys2.org/distrib/msys2-x86_64-latest.exe)
 2. Open the MSYS2 MSYS terminal from your start menu.
 3. Run `pacman -Syuu` until `there is nothing to do.` is displayed.
-4. Run `pacman -S --needed base-devel mingw-w64-i686-toolchain mingw-w64-x86_64-toolchain git subversion mercurial mingw-w64-i686-cmake mingw-w64-x86_64-cmake mingw-w64-x86_64-lua mingw-w64-i686-lua` afterwards. You can run `pacman -Syuu` again if you wish to be safe.
+4. Run `pacman -S --needed base-devel mingw-w64-i686-toolchain mingw-w64-x86_64-toolchain git subversion mercurial mingw-w64-i686-cmake mingw-w64-x86_64-cmake mingw-w64-x86_64-lua` afterwards. You can run `pacman -Syuu` again if you wish to be safe.
 5. Add the following entries to your **PATH**:
 ```
 C:\msys64\mingw32\bin
