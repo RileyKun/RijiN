@@ -174,11 +174,6 @@ function(cxx_compile)
   endif()
 endfunction()
 
-# Add linker flag to explicitly compile with no standard library
-if(BUILD_FLAG_NO_CRT MATCHES ON)
-  add_linker_flags("-nostdlib")
-endif()
-
 # Let the progrma know we are in debug mode
 if(BUILD_FLAG_DEV_MODE MATCHES ON)
   message(STATUS "BUILDING IN DEVELOPMENT MODE")
@@ -308,12 +303,16 @@ if(BUILD_FLAG_PRESET_MODE MATCHES GEN_SECURE_DLL_NOCRT) # Build with preset chea
   # x * 2;  // Might be optimized to x << 1;
   # x / 4;  // Might be optimized to x >> 2;
 
+  # Riley: Static link any libraries that are left dangling otherwise stub iteration will cause us to look for modules
+  # that do not exist in the executable's memory and that's BAD!!!
+  add_cxx_flags("-static")
+  
   if(BUILD_FLAG_DEV_MODE MATCHES ON)
     add_linker_flags("-Wl,--export-all-symbols,--kill-at,--entry=0,--image-base=0x0") # Export ALL symbols, less strict mangles, no entry point, image base 0
   else()
     add_linker_flags("-Wl,--exclude-all-symbols,--kill-at,--entry=0,--image-base=0x0") # Exclude ALL symbols, less strict mangles, no entry point, image base 0
   endif()
-
+  
   # Default libraries
   add_cxx_lib("-lgcc")      # required for things like chckstk_ms/chckstk_ms
   add_cxx_lib("-lkernel32") # required
