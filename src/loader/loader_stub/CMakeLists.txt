@@ -14,6 +14,7 @@ set(BUILD_FLAG_PROTECT      OFF)
 set(BUILD_FLAG_PROTECT_VM   OFF)
 set(BUILD_FLAG_PROTECT_VMCV OFF)
 set(BUILD_FLAG_RTP          ON)
+set(BUILD_FLAG_DEV_MODE     ON)
 
 # include build commander
 include(${CMAKE_CURRENT_SOURCE_DIR}/../../build_commander.cmake)
