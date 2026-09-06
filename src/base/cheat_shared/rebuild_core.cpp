@@ -181,32 +181,6 @@ ALWAYSINLINE wchar_t* wcscpy(wchar_t* dest, const wchar_t* src){
   return memcpy(dest, src, (wcslen(src) * 2) + 1);
 }
 
-ALWAYSINLINE void* memchr(const void *s, int c, size_t n){
-  size_t    i;
-  char    *string;
-
-  if (s == NULL)
-    return (NULL);
-  i = 0;
-  string = (void *)s;
-  while (i < n)
-  {
-    if (string[i] == (char)c)
-      return (&string[i]);
-    i++;
-  }
-  return (NULL);
-}
-
-ALWAYSINLINE int strcmp(const char *s1, const char *s2){
-  int   i;
-
-  i = 0;
-  while (s1[i] && s2[i] && s1[i] == s2[i])
-    i++;
-  return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-}
-
 ALWAYSINLINE int memcmp (const void* str1, const void* str2, size_t count){
   register const unsigned char *s1 = (const unsigned char*)str1;
   register const unsigned char *s2 = (const unsigned char*)str2;
