@@ -142,7 +142,7 @@ public:
 
       // Search for string "minigun_no_spin_sounds" it will land you inside C_TFMinigun::WindDown this is where the function will be at.
       // found inside TF2_SetSpeed
-      add_signature(HASH("tf2_getmaxspeed"), SIG("\x88\x54\x24\x00\x53\x55"));
+      add_signature(HASH("tf2_getmaxspeed"), SIG("\x40\x53\x41\x56\x41\x57\x48\x81\xEC\x00\x00\x00\x00\x48\x83\x3D"));
 
       // Search for "CHudUpgradePanel" you should be in C_TFPlayer::AvoidPlayers
       // if ( *&v2 != 0.0 )
@@ -492,6 +492,7 @@ public:
     set_module(HASH("d3d9.dll"));
     {
       add_hook(HASH("d3d9_hook"), global->dxgi_offset_data->d3d9_present);
+      add_hook(HASH("d3d9_reset_hook"), global->dxgi_offset_data->d3d9_reset);
     }
 
     set_module(HASH("ntdll.dll"));
