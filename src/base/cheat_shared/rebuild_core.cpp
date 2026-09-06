@@ -193,16 +193,4 @@ ALWAYSINLINE int memcmp (const void* str1, const void* str2, size_t count){
   return 0;
 }
 
-ALWAYSINLINE char* strstr(const char *s1, const char *s2)
-{
-  const size_t len = strlen (s2);
-  while (*s1)
-    {
-      if (!memcmp (s1, s2, len))
-  return (char *)s1;
-      ++s1;
-    }
-  return (0);
-}
-
 #endif
